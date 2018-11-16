@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Typed from 'typed.js';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom'
 import logo from './logo.svg';
 import './splash.css';
 
@@ -27,6 +28,8 @@ class Splash extends Component {
   }
   render() {
     const { classes } = this.props;
+    const homeLink = props => <Link to="/home" {...props} />
+
     return (
       <div className="Splash">
         <div className="Splash-header">
@@ -38,7 +41,11 @@ class Splash extends Component {
             />
           </div>
           <p id="info">Click enter to find out more about me.</p>
-          <Button variant="contained" color="primary" className={classes.button}>
+          <Button
+            component={homeLink}
+            variant="contained"
+            color="primary"
+            className={classes.button}>
             Enter
           </Button>
         </div>
