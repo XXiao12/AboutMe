@@ -1,0 +1,53 @@
+.Splash {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height:100vh;
+  position:relative;
+  font-size: calc(10px + 2vmin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Splash-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 5vmin;
+}
+.Splash-header{
+  padding-bottom: 50px;
+}
+.Splash-header p:first-child{
+  font-size: 3.0em;
+}
+
+#info {
+  font-size: 12px;
+}
+.Splash-link {
+  color: #61dafb;
+}
+
+.Splash-footer {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.Splash-footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
