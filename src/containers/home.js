@@ -1,15 +1,46 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import { withStyles } from '@material-ui/core/styles';
-// import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom'
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 // import './about.css';
+
+const styles = theme => ({
+  button: {
+    margin: theme.spacing.unit,
+  },
+  input: {
+    display: 'none',
+  },
+});
 
 class Home extends Component {
   render() {
-    // const { classes } = this.props;
+    const { classes } = this.props;
+    const resumeLink = props => <Link to="/resume" {...props} />
+
     return (
       <div className="Home">
         <p>Shirley Xiao</p>
+        <p>Profile</p>
+        <p>I am a 4th year B.A (Computing and Creative Arts Specialization).
+          I have work experience as a Jr. Graphic Designer and front-end developer. 
+          One of the most important motivators is the type of work I will be doing. 
+          I want to be doing meaningful work that makes a difference for the company and its customers.</p>
+        <Button
+            component={resumeLink}
+            variant="contained"
+            color="primary"
+            className={classes.button}>
+            Resume
+        </Button>
+        <Button
+            component={resumeLink}
+            variant="contained"
+            color="primary"
+            className={classes.button}>
+            My GitHub
+        </Button>
       </div>
     );
   }
@@ -19,4 +50,4 @@ Home.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default (Home);
+export default withStyles(styles)(Home);
