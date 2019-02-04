@@ -1,0 +1,38 @@
+.navbar {
+    position: absolute;
+    right: 0;
+    background-color: black;
+    color: white;
+    width: 15%;
+    min-height: 100vh;
+    z-index: 1;
+    padding: 20px;
+}
+
+.navbar__contents {
+    margin-top: 110px;
+}
+
+.navbar__menubutton {
+    border: none;
+    background: transparent;
+    float: right;
+    cursor: pointer;
+}
+
+.navbar__contents p:hover {
+    margin-left: 15px;
+}
+
+.navbar__menubutton:focus {
+    outline: none;
+}
+
+.navbar__menubutton__icon:hover {
+    width: 52%;
+    background: #0080ff;
+}
+
+.githubLogo, .navbar__menubutton__icon {
+    width: 50%;
+}

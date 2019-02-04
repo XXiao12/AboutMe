@@ -4,7 +4,7 @@ import Typed from 'typed.js';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom'
-import logo from './logo.svg';
+import logo from '../../img/React/logo.svg';
 import './splash.css';
 
 const styles = theme => ({
@@ -19,7 +19,7 @@ const styles = theme => ({
 class Splash extends Component {
   componentDidMount() {
     const options = {
-      strings: ["Hello, my name is Shirley."],
+      strings: ["My name is Shirley Xiao."],
       typeSpeed: 40,
       backSpeed: 40
     }

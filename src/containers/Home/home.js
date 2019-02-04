@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-// import './about.css';
+import NavBar from '../../components/NavBar/index'
+
+import './styles.css';
 
 const styles = theme => ({
   button: {
@@ -21,7 +23,7 @@ class Home extends Component {
 
     return (
       <div className="Home">
-        <p>Shirley Xiao</p>
+        <NavBar />
         <p>Profile</p>
         <p>I am a 4th year B.A (Computing and Creative Arts Specialization).
           I have work experience as a Jr. Graphic Designer and front-end developer. 
@@ -33,13 +35,6 @@ class Home extends Component {
             color="primary"
             className={classes.button}>
             Resume
-        </Button>
-        <Button
-            component={resumeLink}
-            variant="contained"
-            color="primary"
-            className={classes.button}>
-            My GitHub
         </Button>
       </div>
     );

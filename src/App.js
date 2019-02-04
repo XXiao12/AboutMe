@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Splash from './splash.js';
-import Home from './containers/home.js'
+import Splash from './containers/Splash/splash';
+import Home from './containers/Home/home'
 
 class App extends Component {
   render() {
