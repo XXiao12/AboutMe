@@ -1,38 +1,68 @@
 .navbar {
-    position: absolute;
-    right: 0;
     background-color: black;
     color: white;
-    width: 15%;
-    min-height: 100vh;
-    z-index: 1;
+    height: 8%;
     padding: 20px;
+    border-bottom: #0080ff 8px solid;
 }
 
 .navbar__contents {
-    margin-top: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.navbar__menubutton {
+.navbar__contents h2 {
+    flex: 1;
+}
+
+.navbar__contents__link {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__menubutton, .navbar__socialbutton {
     border: none;
     background: transparent;
-    float: right;
     cursor: pointer;
 }
 
-.navbar__contents p:hover {
-    margin-left: 15px;
+.navbar__menubutton {
+    display: none;
+}
+
+/* .navbar__socialbutton {
+    float: right;
+} */
+
+.link {
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+    color: white;
+    line-height: 2.5;
+}
+
+.link:hover {
+    color: #0080ff;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar__contents__link {
+        display: none;
+    }
+    .navbar__menubutton {
+        display: block;
+    }
 }
 
 .navbar__menubutton:focus {
     outline: none;
 }
 
-.navbar__menubutton__icon:hover {
-    width: 52%;
-    background: #0080ff;
+.navbar__buttonicon:hover {
+    background-color: #0080ff;
 }
-
-.githubLogo, .navbar__menubutton__icon {
-    width: 50%;
+.navbar__buttonicon {
+    width: 45%;
 }
