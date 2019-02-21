@@ -1,8 +1,7 @@
 .navbar {
     background-color: black;
     color: white;
-    height: 8%;
-    padding: 20px;
+    padding: 16px;
     border-bottom: #0080ff 8px solid;
 }
 
@@ -32,15 +31,10 @@
     display: none;
 }
 
-/* .navbar__socialbutton {
-    float: right;
-} */
-
 .link {
-    padding: 0 10px 0 10px;
+    padding: 0 8px 0 8px;
     text-decoration: none;
     color: white;
-    line-height: 2.5;
 }
 
 .link:hover {
@@ -56,13 +50,17 @@
     }
 }
 
-.navbar__menubutton:focus {
+.navbar__menubutton:focus, .navbar__socialbutton:focus {
     outline: none;
 }
 
-.navbar__buttonicon:hover {
+.navbar__menubutton:hover {
     background-color: #0080ff;
 }
 .navbar__buttonicon {
-    width: 45%;
+    width: 32%;
+}
+
+.navbar__menubutton {
+    width: 16%;
 }

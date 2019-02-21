@@ -13,6 +13,11 @@ body, #root, .app {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  font-family: 'Felipa', cursive;
+  font-size: 2em;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
