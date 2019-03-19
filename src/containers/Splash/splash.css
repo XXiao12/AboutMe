@@ -1,24 +1,45 @@
 .Splash {
   text-align: center;
   background-color: #282c34;
-  color: white;
-  min-height:100vh;
-  position:relative;
+  color: black;
+  height: 83%;
   font-size: calc(10px + 2vmin);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background: url(../../img/BirdOnTree.jpg) fixed no-repeat #282c34;
+  background-size: cover;
 }
 
 .Splash-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 5vmin;
 }
-.Splash-header{
+
+.Splash-overlay {
+  position: absolute;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.Splash-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
   padding-bottom: 50px;
 }
-.Splash-header p:first-child{
+
+.Splash-header .content {
+  opacity: 1;
+  z-index: 1;
+}
+
+.Splash-header .content p:first-child{
   font-size: 3.0em;
 }
 
@@ -26,13 +47,12 @@
   font-size: 12px;
 }
 .Splash-link {
-  color: #61dafb;
+  color: black;
 }
 
 .Splash-footer {
   position: absolute;
   bottom: 0;
-  height: 50px;
   width: 100%;
 }
 

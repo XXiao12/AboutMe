@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import NavBar from '../../components/NavBar/index'
+import NavBar from '../../components/NavBar/index';
 import generateuuid from 'uuid';
 
 import './styles.css';
