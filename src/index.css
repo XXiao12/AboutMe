@@ -9,13 +9,19 @@ body, #root, .app {
   font-family: "Helvetica", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     sans-serif;
+  font-weight: 200;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 p {
+  font-weight: 200;
   font-family: "Garamond", "Helvetica", "Roboto", "Oxygen",
   "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
   sans-serif;
+ }
+
+ h1, h2, h3 {
+   font-weight: 200;
  }
 
 code {

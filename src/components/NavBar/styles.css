@@ -1,7 +1,7 @@
 .navbar {
     background-color: black;
     color: white;
-    padding: 16px;
+    padding: 8px 32px 8px 32px;
     height: 9%;
     border-bottom: #0080ff 8px solid;
 }
@@ -19,6 +19,7 @@
 .navbar__contents__link {
     flex: 2;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -35,6 +36,7 @@
 .link {
     padding: 0 8px 0 8px;
     text-decoration: none;
+    /* color: black; */
     color: white;
 }
 
