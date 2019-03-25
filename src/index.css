@@ -6,17 +6,17 @@ body, #root, .app {
   padding: 0;
   height: 100%;
   overflow: auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  font-family: "Helvetica", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-h2 {
-  font-family: 'Felipa', cursive;
-  font-size: 2em;
-}
+p {
+  font-family: "Garamond", "Helvetica", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+  sans-serif;
+ }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
