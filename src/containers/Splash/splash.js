@@ -45,7 +45,7 @@ class Splash extends Component {
               LinkedIn
             </Button>
             <Button variant="outlined" component={homeLink} color="primary" className={classes.button}>
-              Enter
+              Enter Site
             </Button>
           </div>
             {/* <div className="type-wrap">
