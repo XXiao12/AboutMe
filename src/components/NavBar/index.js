@@ -12,7 +12,9 @@ const NavBar = () => {
         {window.location.pathname === '/'
         ? <div className="navbar__contents" />
         : <div className="navbar__contents">
-            <h2>Shirley Xiao</h2>
+            <Link to="/home">
+                <h2 className="link">Shirley Xiao</h2>
+            </Link>
             <div className="navbar__contents__link">
                 <Link className="link" to="/resume">
                     Resume
