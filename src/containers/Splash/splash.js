@@ -38,10 +38,21 @@ class Splash extends Component {
           <div className="content">
           <p>Shirley Xiao</p>
           <div className="nav">
-            <Button variant="outlined" href="https://github.com/XXiao12" color="inherit" className={classes.button}>
+            <Button
+              variant="outlined"
+              href="https://github.com/XXiao12"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+              className={classes.button}>
               Github
             </Button>
-            <Button variant="outlined" herf="https://www.linkedin.com/in/shirley-xiao-b72335a7/" color="inherit" className={classes.button}>
+            <Button
+              variant="outlined"
+              href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit" className={classes.button}>
               LinkedIn
             </Button>
             <Button variant="outlined" component={homeLink} color="primary" className={classes.button}>
