@@ -25,6 +25,13 @@
   z-index: 0;
 }
 
+.message {
+  font-family: "helvetica";
+  font-size: 20px;
+  color: #0080ff;
+  padding: 16px;
+  border: 1px solid #0080ff;
+}
 .nav {
   display: flex;
   align-content: center;

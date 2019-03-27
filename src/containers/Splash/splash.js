@@ -37,6 +37,7 @@ class Splash extends Component {
         <div className="Splash-header">
           <div className="content">
           <p>Shirley Xiao</p>
+          <p className="message">Site Currently Under Construction</p>
           <div className="nav">
             <Button
               variant="outlined"
@@ -55,7 +56,12 @@ class Splash extends Component {
               color="inherit" className={classes.button}>
               LinkedIn
             </Button>
-            <Button variant="outlined" component={homeLink} color="primary" className={classes.button}>
+            <Button
+              variant="outlined"
+              component={homeLink}
+              disabled
+              color="primary"
+              className={classes.button}>
               Enter Site
             </Button>
           </div>
