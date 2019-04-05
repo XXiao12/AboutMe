@@ -7,7 +7,7 @@ import Splash from './containers/Splash/splash';
 import Home from './containers/Home/home'
 
 const demoAsyncCall=() => {
-  return new Promise((resolve) => setTimeout(() => resolve(), 3500));
+  return new Promise((resolve) => setTimeout(() => resolve(), 35000000));
 }
 
 class App extends Component {
