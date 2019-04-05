@@ -13,6 +13,39 @@ body, #root, .app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.loading {
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  width: 50%;
+  height: 15%;
+  margin-top: 50px;
+  background-color: white;
+  box-shadow: 1px 1px 10px #e8e8e8;
+}
+
+.loading .info p {
+  font-family: "Helvetica";
+  font-size: 12px;
+}
+.loading .info h2 {
+  font-family: "Garamond";
+}
+
 p {
   font-weight: 200;
   font-family: "Garamond", "Helvetica", "Roboto", "Oxygen",

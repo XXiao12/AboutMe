@@ -65,13 +65,7 @@ class Splash extends Component {
               Enter Site
             </Button>
           </div>
-            {/* <div className="type-wrap">
-              <span
-                style={{ whiteSpace: 'pre' }}
-                ref={(el) => { this.el = el; }}
-              />
-            </div> */}
-          </div>
+        </div>
         </div>
         <div className="Splash-footer">
           <p>
