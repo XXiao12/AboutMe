@@ -18,15 +18,6 @@ const styles = theme => ({
 });
 
 class Splash extends Component {
-  // componentDidMount() {
-  //   const options = {
-  //     strings: ["my name is Shirley Xiao", "if you have come to learn more about me", "you have arrived at the correct url"],
-  //     typeSpeed: 40,
-  //     backSpeed: 40
-  //   }
-    
-  //   this.typed = new Typed(this.el, options);
-  // }
   render() {
     const { classes } = this.props;
     const homeLink = props => <Link to="/home" {...props} />
