@@ -25,12 +25,13 @@ body, #root, .app {
 }
 
 .loading .info {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   width: 50%;
   height: 15%;
   margin-top: 50px;
