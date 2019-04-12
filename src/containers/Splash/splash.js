@@ -6,6 +6,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { Link } from 'react-router-dom'
 import logo from '../../img/React/logo.svg';
+// import mylogo from '../../img/sxLogo.png';
 import './splash.css';
 
 const styles = theme => ({
@@ -27,6 +28,7 @@ class Splash extends Component {
         <div className="Splash-overlay" />
         <div className="Splash-header">
           <div className="content">
+          {/* <img rel="preload" src={mylogo} alt="mylogo" width="50px" height="50px" /> */}
           <p>Shirley Xiao</p>
           <p className="message">Site Currently Under Construction</p>
           <div className="nav">
@@ -46,6 +48,15 @@ class Splash extends Component {
               rel="noopener noreferrer"
               color="inherit" className={classes.button}>
               LinkedIn
+            </Button>
+            <Button
+              variant="outlined"
+              href="https://dribbble.com/shirley_x"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+              className={classes.button}>
+              Dribbble
             </Button>
             <Button
               variant="outlined"
