@@ -26,18 +26,37 @@ class Home extends Component {
       [
         <NavBar key={generateuuid()} />,
         <div key={generateuuid()} className="Home">
-          <p>Profile</p>
-          <p>I am a 4th year B.A (Computing and Creative Arts Specialization).
+          <p>Hi there!</p>
+          <p>I am a recent graduate from Queen's University with a B.A Honours in Computing and Creative Arts Specialization.
             I have work experience as a Jr. Graphic Designer and front-end developer. 
             One of the most important motivators is the type of work I will be doing. 
             I want to be doing meaningful work that makes a difference for the company and its customers.</p>
-          <Button
-            component={resumeLink}
-            variant="contained"
-            color="primary"
-            className={classes.button}>
-            Resume
-          </Button>
+            <Button
+              variant="outlined"
+              href="https://github.com/XXiao12"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+              className={classes.button}>
+              Github
+            </Button>
+            <Button
+              variant="outlined"
+              href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit" className={classes.button}>
+              LinkedIn
+            </Button>
+            <Button
+              variant="outlined"
+              href="https://dribbble.com/shirley_x"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+              className={classes.button}>
+              Dribbble
+            </Button>
         </div>
       ]
     );
