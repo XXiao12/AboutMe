@@ -16,24 +16,18 @@ const NavBar = () => {
                 <h2 className="link">Shirley Xiao</h2>
             </Link>
             <div className="navbar__contents__link">
-                <Link className="link" to="/resume">
-                    Resume
-                </Link>
                 <Link className="link" to="/home">
                     Design
                 </Link>
                 <Link className="link" to="/home">
-                    Guestbook
+                    Development
                 </Link>
-                <a
-                    href='https://github.com/XXiao12'
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <button className="navbar__socialbutton">
-                        <img className="navbar__buttonicon" src={githubMark} alt="Github Logo" />
-                    </button>
-                </a>
+                <Link className="link" to="/resume">
+                    Resume
+                </Link>
+                <Link className="link" to="/resume">
+                    Contact
+                </Link>
             </div>
                 <img className="navbar__menubutton" src={menuIcon} alt="Menu Icon" />
             </div>
