@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import NavBar from '../../components/NavBar/index';
-import generateuuid from 'uuid';
+import WrapperComponent from '../../components/Wrapper';
 
 import './styles.css';
 
@@ -22,9 +20,8 @@ class About extends Component {
     const { classes } = this.props;
 
     return (
-      [
-        <NavBar key={generateuuid()} />,
-        <div key={generateuuid()} className="about">
+     <WrapperComponent>
+        <div className="about">
           <div className="container">
             <div className="content">
               <div>
@@ -78,7 +75,7 @@ class About extends Component {
             </div>
           </div>
         </div>
-      ]
+      </WrapperComponent>
     );
   }
 }

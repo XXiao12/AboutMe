@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-// import { Link } from 'react-router-dom'
-import generateuuid from 'uuid';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
-import NavBar from '../../components/NavBar/index';
 import ProjectButton from '../../components/ProjectButton';
+import WrapperComponent from '../../components/Wrapper';
 
 import './styles.css';
 
@@ -24,13 +22,9 @@ class Home extends Component {
     console.log('classes: ', classes.button);
 
     return (
-      [
-        <NavBar key={generateuuid()} />,
-        <div
-          key={generateuuid()}
-          className="home"
-        >
-          <div className="home__banner"/>
+      <WrapperComponent>
+        <div className="home">
+          <div className="home__banner" />
           <ProjectButton
             name="ENIN 240 - 
             Explorations in Creativity"
@@ -75,7 +69,7 @@ class Home extends Component {
             </Button>
           </div>
         </div >
-      ]
+      </WrapperComponent>
     );
   }
 }
