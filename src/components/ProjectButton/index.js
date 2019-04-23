@@ -1,6 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import descriptions from './descriptions';
 
 import './styles.css';
 
@@ -8,7 +9,7 @@ const ProjectButton = (props = {}) => {
     const {
         link = "/404",
         name,
-        description,
+        descriptionTag,
         location = null,
     } = props;
 
@@ -20,7 +21,7 @@ const ProjectButton = (props = {}) => {
                         <h3 className="project--button-title">{name}</h3>
                         <p className="project--button-location">{location}</p>
                     </div>
-                    <p className="project--button-description">{description}</p>
+                    <p className="project--button-description">{descriptions[descriptionTag]}</p>
                 </div>
             </Link>
         </div >

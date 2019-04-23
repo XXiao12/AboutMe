@@ -32,23 +32,24 @@ class Home extends Component {
         >
           <div className="home__banner"/>
           <ProjectButton
-            name="ENIN 240 - Creativity"
-            description="Lorem ipsum dolor sit amet, "
+            name="ENIN 240 - 
+            Explorations in Creativity"
+            descriptionTag="creativity"
             location="Queen's University"
           />
           <ProjectButton
             name="ENIN 140 - Design Thinking"
-            description="Lorem ipsum dolor sit amet, "
+            descriptionTag="design_thinking"
             location="Queen's University"
           />
            <ProjectButton
             name="Living in Technicolour"
-            description="Lorem ipsum dolor sit amet, "
+            descriptionTag="LIT"
             location="Queen's University"
           />
           <ProjectButton
             name="Colliding Scopes Theatre"
-            description="Lorem ipsum dolor sit amet, "
+            descriptionTag="CST"
             location="Queen's University"
           />
 

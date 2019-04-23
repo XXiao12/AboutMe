@@ -1,8 +1,9 @@
 .project {
     width: 100%;
+    min-height: 150px;
     border: 1px solid black;
     border-radius: 5px;
-    margin-top: 16px;
+    margin-top: 24px;
 }
 
 .project--button {
@@ -26,7 +27,7 @@
 }
 
 .project--button-description {
-    flex: 2 1 auto;
+    flex: 2 1 100%;
 }
 
 .project--button-location {
