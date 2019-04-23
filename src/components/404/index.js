@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import WrapperComponent from '../Wrapper';
@@ -20,6 +21,10 @@ const Error = (props = {}) => {
         classes
     } = props;
 
+    const portfolioLink = props => <Link to="/" {...props} />;
+    const aboutLink = props => <Link to="/about" {...props} />;
+
+
     return (
         <WrapperComponent>
             <div className="error">
@@ -33,17 +38,7 @@ const Error = (props = {}) => {
                 <div className="error--container error--buttons">
                     <Button
                         variant="outlined"
-                        href="https://dribbble.com/shirley_x"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        color="inherit"
-                        className={classes.button}>
-                        go back
-                    </Button>
-                    <Button
-                        variant="outlined"
-                        href="https://dribbble.com/shirley_x"
-                        target="_blank"
+                        component={portfolioLink}
                         rel="noopener noreferrer"
                         color="inherit"
                         className={classes.button}>
@@ -51,8 +46,7 @@ const Error = (props = {}) => {
                         </Button>
                     <Button
                         variant="outlined"
-                        href="https://dribbble.com/shirley_x"
-                        target="_blank"
+                        component={aboutLink}
                         rel="noopener noreferrer"
                         color="inherit"
                         className={classes.button}>

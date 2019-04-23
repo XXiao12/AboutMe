@@ -3,9 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import importfacts from './facts';
-import home from './containers/Home/home';
-import about from './containers/About';
 import portfolio from './containers/Home/home';
+import about from './containers/About';
 import error from './components/404';
 
 
@@ -66,9 +65,8 @@ class App extends Component {
       <BrowserRouter>
         <div className="app">
           <Switch>
-            <Route exact path="/" component={home} />
+            <Route exact path="/" component={portfolio} />
             <Route exact path="/about" component={about} />
-            <Route exact path="/portfolio" component={portfolio} />
             <Route component={error} />
           </Switch>
         </div>

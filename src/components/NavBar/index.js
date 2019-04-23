@@ -13,7 +13,7 @@ const NavBar = () => {
                 <h1 className="navbar--links-themeblack">Shirley Xiao</h1>
             </Link>
             <div className="navbar--links">
-                <Link className="navbar--links-themeblack" to="/portfolio">
+                <Link className="navbar--links-themeblack" to="/">
                     Portfolio
                 </Link>
                 <Link className="navbar--links-themeblack" to="/about">
