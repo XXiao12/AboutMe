@@ -6,6 +6,10 @@
     margin-top: 24px;
 }
 
+.project:hover {
+    background-color: #FFF3EB;
+}
+
 .project--button {
     margin-left: 32px;
     font-family: Helvetica;
