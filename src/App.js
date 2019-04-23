@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import importfacts from './facts';
@@ -63,14 +63,16 @@ class App extends Component {
               </div>
     }
     return (
-      <Router>
+      <BrowserRouter>
         <div className="app">
-          <Route exact path="/" component={home} />
-          <Route exact path="/about" component={about} />
-          <Route exact path="/portfolio" component={portfolio} />
-          <Route exact path="/404" component={error} />
+          <Switch>
+            <Route exact path="/" component={home} />
+            <Route exact path="/about" component={about} />
+            <Route exact path="/portfolio" component={portfolio} />
+            <Route component={error} />
+          </Switch>
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
