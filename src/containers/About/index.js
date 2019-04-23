@@ -22,8 +22,8 @@ class About extends Component {
     return (
      <WrapperComponent>
         <div className="about">
-          <div className="about--container">
-            <div className="about--content">
+          <div className="about__container">
+            <div className="about__content">
               <div>
                 <p>Hi there!</p>
                 <p>I am a recent graduate from Queen's University with a B.A Honours in the Computing and Creative Arts Specialization. I have experience as a graphic designer and front-end developer.
@@ -41,11 +41,11 @@ class About extends Component {
 
             <p>Feel free to contact me at: 647 909 3876 or shirley.xiao1996@gmail.com</p>
           </div>
-          <div className="about--links">
-            <div className="about--header">
+          <div className="about__links">
+            <div className="about__header">
               <h2>You can also find me on</h2>
             </div>
-            <div className="about--buttons">
+            <div className="about__buttons">
               <Button
                 variant="outlined"
                 href="https://github.com/XXiao12"

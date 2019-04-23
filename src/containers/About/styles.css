@@ -6,32 +6,32 @@
     justify-content: space-between;
 }
 
-.about--container {
+.about__container {
     background-color: #FFF3EB;
     padding: 32px;
 }
 
-.about--container p {
+.about__container p {
     font-size: 20px;
     color: #403F3F;
     word-wrap: break-word
 }
 
-.about--container h2 {
+.about__container h2 {
     margin-top: 64px;
 }
 
-.about--container li {
+.about__container li {
     font-family: garamond, helvetica;
     font-size: 20px;
     color: #403F3F;
 }
 
-.about--content {
+.about__content {
     display: flex;
 }
 
-.about--links {
+.about__links {
     padding: 32px 0 32px 0;
     width: 100%;
     display: flex;
@@ -41,7 +41,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .about--container {
+    .about__container {
         padding: 24px;
     }
 }
