@@ -3,8 +3,11 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import importfacts from './facts';
-import Splash from './containers/Splash/splash';
-import Home from './containers/Home/home'
+import home from './containers/Home/home';
+import about from './containers/About';
+import portfolio from './containers/Home/home';
+import error from './components/404';
+
 
 const demoAsyncCall=() => {
   return new Promise((resolve) => setTimeout(() => resolve(), 3500));
@@ -62,8 +65,10 @@ class App extends Component {
     return (
       <Router>
         <div className="app">
-          <Route exact path="/" component={Splash} />
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={home} />
+          <Route exact path="/about" component={about} />
+          <Route exact path="/portfolio" component={portfolio} />
+          <Route exact path="/404" component={portfolio} />
         </div>
       </Router>
     );

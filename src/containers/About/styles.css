@@ -1,0 +1,47 @@
+.about {
+    overflow: auto;
+    padding: 32px 64px 32px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+}
+
+.profile {
+    background-color: #403F3F;
+    height: 100px;
+    width: 100px;
+}
+
+.container {
+    background-color: #FFF3EB;
+    padding: 64px;
+}
+
+.container p {
+    font-size: 20px;
+    color: #403F3F;
+    word-wrap: break-word
+}
+
+.container h2 {
+    margin-top: 64px;
+}
+
+.container li {
+    font-family: garamond, helvetica;
+    font-size: 20px;
+    color: #403F3F;
+}
+
+.section {
+    padding: 32px 0 32px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

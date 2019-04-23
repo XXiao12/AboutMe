@@ -1,0 +1,34 @@
+.project {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+.project--button {
+    margin-left: 32px;
+    font-family: Helvetica;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+.project--button div {
+    flex: 1 2 0;
+    margin-right: 32px
+}
+
+.project--button p, h2, h3 {
+    font-family: Helvetica;
+    color: black;
+}
+
+.project--button-description {
+    flex: 2 1 auto;
+}
+
+.project--button-location {
+    font-size: 12px;
+}
