@@ -10,7 +10,7 @@ import error from './components/404';
 
 
 const demoAsyncCall=() => {
-  return new Promise((resolve) => setTimeout(() => resolve(), 3500));
+  return new Promise((resolve) => setTimeout(() => resolve(), 1500));
 }
 
 class App extends Component {
