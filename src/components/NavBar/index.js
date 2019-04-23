@@ -8,19 +8,19 @@ import './styles.css';
 const NavBar = () => {
     return (
         <div className="navbar">
-            <div className="navbar__contents">
+            <div className="navbar--contents">
             <Link to="/">
                 <h1 className="link">Shirley Xiao</h1>
             </Link>
-            <div className="navbar__contents__link">
-                <Link className="link" to="/portfolio">
+            <div className="navbar--links">
+                <Link className="navbar--links-themeblack" to="/portfolio">
                     Portfolio
                 </Link>
-                <Link className="link" to="/about">
+                <Link className="navbar--links-themeblack" to="/about">
                     About
                 </Link>
             </div>
-                <img className="navbar__menubutton" src={menuIcon} alt="Menu Icon" />
+                <img className="navbar--button" src={menuIcon} alt="Menu Icon" />
             </div>
         </div>
     );

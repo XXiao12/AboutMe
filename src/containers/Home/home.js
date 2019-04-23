@@ -24,7 +24,7 @@ class Home extends Component {
     return (
       <WrapperComponent>
         <div className="home">
-          <div className="home__banner" />
+          <div className="home--banner" />
           <ProjectButton
             name="ENIN 240 - 
             Explorations in Creativity"
