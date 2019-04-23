@@ -53,6 +53,7 @@ class Home extends Component {
               variant="outlined"
               href="https://dribbble.com/shirley_x"
               target="_blank"
+              disabled
               rel="noopener noreferrer"
               color="inherit"
               className={classes.button}>
@@ -62,6 +63,7 @@ class Home extends Component {
               variant="outlined"
               href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
               target="_blank"
+              disabled
               rel="noopener noreferrer"
               color="inherit"
               className={classes.button}>
