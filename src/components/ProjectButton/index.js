@@ -15,13 +15,13 @@ const ProjectButton = (props = {}) => {
 
     return (
         <div className="project">
-            <Link to={link}>
-                <div className="project--button">
+            <Link className="links--themeblack" to={link}>
+                <div className="project__button">
                     <div>
-                        <h3 className="project--button-title">{name}</h3>
-                        <p className="project--button-location">{location}</p>
+                        <h3 className="project__buttontitle">{name}</h3>
+                        <p className="project__buttonlocation">{location}</p>
                     </div>
-                    <p className="project--button-description">{descriptions[descriptionTag]}</p>
+                    <p className="project__buttondescription">{descriptions[descriptionTag]}</p>
                 </div>
             </Link>
         </div >

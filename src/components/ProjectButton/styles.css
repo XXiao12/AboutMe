@@ -10,7 +10,7 @@
     background-color: #FFF3EB;
 }
 
-.project--button {
+.project__button {
     margin: 32px;
     font-family: Helvetica;
     height: 100%;
@@ -20,20 +20,20 @@
     align-items: center;
 }
 
-.project--button div {
+.project__button div {
     flex: 1 2 0;
     margin-right: 32px
 }
 
-.project--button p, h2, h3 {
+.project__button p, h2, h3 {
     font-family: Helvetica;
     color: black;
 }
 
-.project--button-description {
+.project__buttondescription {
     flex: 2 1 100%;
 }
 
-.project--button-location {
+.project__buttonlocation {
     font-size: 12px;
 }

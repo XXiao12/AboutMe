@@ -28,14 +28,14 @@ const Error = (props = {}) => {
     return (
         <WrapperComponent>
             <div className="error">
-                <div className="error--container">
+                <div className="error__container">
                     <h2>404</h2>
                     <div>
                         <p>Oh no! </p>
                         <p>The page you are looking for does not exist.</p>
                     </div>
                 </div>
-                <div className="error--container error--buttons">
+                <div className="error__container error__buttons">
                     <Button
                         variant="outlined"
                         component={portfolioLink}
@@ -43,7 +43,7 @@ const Error = (props = {}) => {
                         color="inherit"
                         className={classes.button}>
                         portfolio
-                        </Button>
+                    </Button>
                     <Button
                         variant="outlined"
                         component={aboutLink}

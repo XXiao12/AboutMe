@@ -6,6 +6,10 @@ import importfacts from './facts';
 import portfolio from './containers/Home/home';
 import about from './containers/About';
 import error from './components/404';
+import lit from './containers/Portfolio/LIT';
+import enin240 from './containers/Portfolio/ENIN240';
+import enin140 from './containers/Portfolio/ENIN140';
+import cst from './containers/Portfolio/CST';
 
 
 const demoAsyncCall=() => {
@@ -67,6 +71,10 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={portfolio} />
             <Route exact path="/about" component={about} />
+            <Route exact path="/enin240" component={enin240} />
+            <Route exact path="/enin140" component={enin140} />
+            <Route exact path="/living_in_technicolour" component={lit} />
+            <Route exact path="/colliding_scopes_theatre" component={cst} />
             <Route component={error} />
           </Switch>
         </div>

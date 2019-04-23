@@ -1,0 +1,14 @@
+.projectwrapper {
+    position: relative;
+    width: 100%;
+    min-height: 74vh;
+}
+.projectwrapper__buttoncontainer {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 6%;
+    width: 100%;
+}

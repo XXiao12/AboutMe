@@ -29,21 +29,25 @@ class Home extends Component {
             Explorations in Creativity"
             descriptionTag="creativity"
             location="Queen's University"
+            link="/enin240"
           />
           <ProjectButton
             name="ENIN 140 - Design Thinking"
             descriptionTag="design_thinking"
             location="Queen's University"
+            link="/enin140"
           />
            <ProjectButton
             name="Living in Technicolour"
             descriptionTag="LIT"
             location="Queen's University"
+            link="/living_in_technicolour"
           />
           <ProjectButton
             name="Colliding Scopes Theatre"
             descriptionTag="CST"
             location="Queen's University"
+            link="/colliding_scopes_theatre"
           />
 
           <h2>Other works</h2>

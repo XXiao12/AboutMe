@@ -55,9 +55,14 @@ p {
   sans-serif;
  }
 
- a {
+ .links--themeblack {
+  color: black;
   text-decoration: none;
  }
+
+ .links--themeblack:hover {
+  color: #0080ff;
+}
 
  h1, h2, h3 {
    font-weight: 200;
