@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Link, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import importfacts from './facts';

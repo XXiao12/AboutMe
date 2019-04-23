@@ -19,7 +19,6 @@ const styles = theme => ({
 class Home extends Component {
   render() {
     const { classes } = this.props;
-    console.log('classes: ', classes.button);
 
     return (
       <WrapperComponent>
