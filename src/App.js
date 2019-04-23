@@ -68,7 +68,7 @@ class App extends Component {
           <Route exact path="/" component={home} />
           <Route exact path="/about" component={about} />
           <Route exact path="/portfolio" component={portfolio} />
-          <Route exact path="/404" component={portfolio} />
+          <Route exact path="/404" component={error} />
         </div>
       </Router>
     );
