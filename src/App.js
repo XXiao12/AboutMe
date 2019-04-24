@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import Splash from './containers/Splash/splash';
 import importfacts from './facts';
 import portfolio from './containers/Home/home';
 import about from './containers/About';
@@ -69,6 +70,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="app">
           <Switch>
+          <Route exact path="/" component={Splash} />
             <Route exact path="/portfolio" component={portfolio} />
             <Route exact path="/about" component={about} />
             <Route exact path="/enin240" component={enin240} />
