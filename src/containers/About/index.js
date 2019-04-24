@@ -31,9 +31,9 @@ class About extends Component {
               </div>
             </div>
 
-            <h2>What I am up to and my future plans</h2>
+            <h3>what I am up to...</h3>
             <ul>
-              <li>seeking a full-time job as a front end developer or as a ui/ux designer</li>
+              <li>seeking a full-time job as a front end developer or as a UI/UX designer</li>
               <li>continue to update and find ways to improve this portfolio site</li>
               <li>continue to take courses with IDF (Interactive Design Foundation)</li>
               <li>working to gather people to create a "company" to solve solutions we would like to tackle</li>
