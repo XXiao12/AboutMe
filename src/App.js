@@ -69,7 +69,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="app">
           <Switch>
-            <Route exact path="/" component={portfolio} />
+            <Route exact path="/portfolio" component={portfolio} />
             <Route exact path="/about" component={about} />
             <Route exact path="/enin240" component={enin240} />
             <Route exact path="/enin140" component={enin140} />
