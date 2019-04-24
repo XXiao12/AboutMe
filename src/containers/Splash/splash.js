@@ -60,6 +60,15 @@ class Splash extends Component {
             </Button>
             <Button
               variant="outlined"
+              href="https://shirley.portfoliobox.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="primary"
+              className={classes.button}>
+              Old site
+            </Button>
+            <Button
+              variant="outlined"
               component={homeLink}
               disabled
               color="primary"
