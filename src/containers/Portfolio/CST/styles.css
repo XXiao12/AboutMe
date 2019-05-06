@@ -1,0 +1,8 @@
+.CST__images {
+    display: flex;
+    align-items: center;
+}
+
+.CST__images img {
+    margin-right: 32px;
+}

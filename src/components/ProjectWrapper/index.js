@@ -31,16 +31,16 @@ const ProjectWrapper = (props = {}) => {
     return (
         <Wrapper>
             <div className="projectwrapper">
-                <div>
+                <div className="projectwrapper__header">
                     <h2>{project.title}</h2>
                     <p>{project.location} | {project.timerange}</p>
                 </div>
-
-                {children}
-
+                <div className="projectwrapper__contents">
+                    {children}
+                </div>
                 <div className="projectwrapper__buttoncontainer">
                     <Link
-                        className="links--themeblack"
+                        className="links--themeblack links--disabled"
                         to={project.linkL}>
                         {project.btntextL}
                     </Link>
@@ -50,7 +50,7 @@ const ProjectWrapper = (props = {}) => {
                         Portfolio
                     </Link>
                     <Link
-                        className="links--themeblack"
+                        className="links--themeblack links--disabled"
                         to={project.linkR}>
                         {project.btntextR}
                     </Link>

@@ -3,12 +3,21 @@
     width: 100%;
     min-height: 74vh;
 }
+
+.projectwrapper__contents {
+    padding-bottom: 64px;
+}
+
 .projectwrapper__buttoncontainer {
-    margin-top: 32px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     position: absolute;
-    bottom: 6%;
+    bottom: 0;
     width: 100%;
+}
+
+.links--disabled {
+    pointer-events: none;
+    color: grey !important;
 }

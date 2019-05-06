@@ -23,8 +23,8 @@ class Home extends Component {
     return (
       <WrapperComponent>
         <div className="home">
-          <div className="home__banner" />
-          <ProjectButton
+          <div className="home__banner">[create graphic]</div>
+          {/* <ProjectButton
             name="ENIN 240 - 
             Explorations in Creativity"
             descriptionTag="creativity"
@@ -42,7 +42,7 @@ class Home extends Component {
             descriptionTag="LIT"
             location="Queen's University"
             link="/living_in_technicolour"
-          />
+          /> */}
           <ProjectButton
             name="Colliding Scopes Theatre"
             descriptionTag="CST"

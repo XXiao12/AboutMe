@@ -21,7 +21,7 @@ const styles = theme => ({
 class Splash extends Component {
   render() {
     const { classes } = this.props;
-    const homeLink = props => <Link to="/home" {...props} />
+    const homeLink = props => <Link to="/portfolio" {...props} />
 
     return (
       <div key={generateuuid()} className="Splash">
@@ -70,7 +70,6 @@ class Splash extends Component {
             <Button
               variant="outlined"
               component={homeLink}
-              disabled
               color="primary"
               className={classes.button}>
               Enter Site
