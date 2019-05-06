@@ -17,7 +17,12 @@ import './styles.css';
 const CST = (props = {}) => {
     return (
         <ProjectWrapper projectkey="CST">
-            <p className="viewer--message">**Currently in progress: creating modal to enlarge photos for better viewing**</p>
+            <h3 className="viewer--message">Currently in progress</h3>
+            <ul>
+                <li className="viewer--message">creating modal to enlarge photos for better viewing</li>
+                <li className="viewer--message">figure out how to make modal responsive</li>
+            </ul>
+
             <h3>Planning</h3>
             <div>
                 <p>Premiliniary note taking from meetings with the board and ensemble. I went every week to listen in to their discussions about the play to get ideas for the graphics/props I will need to design.</p>
