@@ -26,7 +26,7 @@ class About extends Component {
             <div className="about__content">
               <div>
                 <p>Hi there!</p>
-                <p>I am a recent graduate from Queen's University with a B.A Honours in the Computing and Creative Arts Specialization. I have experience as a graphic designer and front-end developer.
+                <p>I am a recent graduate from Queen's University with a B.A Honours in the Computing and Creative Arts Specialization. I have experience as a graphic designer and front-end developer...
                 </p>
               </div>
             </div>
