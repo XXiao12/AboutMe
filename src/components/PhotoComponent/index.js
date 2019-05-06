@@ -23,7 +23,7 @@ class PhotoComponent extends React.Component {
             className="small"
             src={plan1}
             onClick={this.handleShowDialog}
-            alt="no image"
+            alt="portfolio"
             width="100px"
             height="140px"
           />
@@ -37,7 +37,7 @@ class PhotoComponent extends React.Component {
                 className="image"
                 src={plan1}
                 onClick={this.handleShowDialog}
-                alt="no image"
+                alt="portfolio"
                 width="600px"
                 height="640px"
               />
