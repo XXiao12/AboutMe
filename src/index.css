@@ -68,6 +68,15 @@ p {
   color: #0080ff;
 }
 
+.viewer--message {
+  color: #0080ff;
+}
+
+.links--disabled {
+  pointer-events: none;
+  color: grey !important;
+}
+
  h1, h2, h3 {
    font-weight: 200;
  }

@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectWrapper from '../../../components/ProjectWrapper';
-import plan1 from '../../../img/CST/IMG_2549.jpg';
+import PhotoComponent from '../../../components/PhotoComponent/index';
+// import plan1 from '../../../img/CST/IMG_2549.jpg';
 import plan2 from '../../../img/CST/IMG_2550.jpg';
 import plan3 from '../../../img/CST/IMG_2551.jpg';
 import plan4 from '../../../img/CST/IMG_2552.jpg';
@@ -16,11 +17,12 @@ import './styles.css';
 const CST = (props = {}) => {
     return (
         <ProjectWrapper projectkey="CST">
+            <p className="viewer--message">**Currently in progress: creating modal to enlarge photos for better viewing**</p>
             <h3>Planning</h3>
             <div>
                 <p>Premiliniary note taking from meetings with the board and ensemble. I went every week to listen in to their discussions about the play to get ideas for the graphics/props I will need to design.</p>
                 <div className="CST__images">
-                    <img src={plan1} alt="plan1" width="100px" height="140px" />
+                    <PhotoComponent />
                     <img src={plan2} alt="plan2" width="100px" height="140px" />
                     <img src={plan3} alt="plan3" width="100px" height="140px" />
                     <img src={plan4} alt="plan4" width="100px" height="140px" />
