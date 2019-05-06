@@ -21,6 +21,7 @@ const CST = (props = {}) => {
             <ul>
                 <li className="viewer--message">creating modal to enlarge photos for better viewing</li>
                 <li className="viewer--message">figure out how to make modal responsive</li>
+                <li className="viewer--message">how to make images load faster</li>
             </ul>
 
             <h3>Planning</h3>
