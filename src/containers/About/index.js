@@ -24,7 +24,7 @@ class About extends Component {
       <WrapperComponent>
         <div className="about">
           <div className="about__container">
-            <img className="about__profilephoto" src={profile_image} width="250px" />
+            <img className="about__profilephoto" src={profile_image} width="130px" />
             <div className="about__content">
               <div>
                 <p>Hi there!</p>
