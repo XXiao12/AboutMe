@@ -92,7 +92,7 @@ class Gallery extends Component {
 					onClickPrev={this.gotoPrevious}
 					onClickThumbnail={this.gotoImage}
 					onClose={this.closeLightbox}
-					// preventScroll={this.props.preventScroll}
+					backdropClosesModal={true}
 					preloadNextImage={true}
 					showThumbnails={this.props.showThumbnails}
 					spinner={this.props.spinner}
