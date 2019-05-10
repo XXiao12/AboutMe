@@ -133,7 +133,7 @@ const classes = StyleSheet.create({
 	thumbnail: {
 		boxSizing: 'border-box',
 		display: 'block',
-		// float: 'left',
+		float: 'left',
 		lineHeight: 0,
 		paddingRight: gutter.small,
 		paddingBottom: gutter.small,

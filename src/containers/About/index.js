@@ -3,35 +3,37 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import WrapperComponent from '../../components/Wrapper';
+import profile_image from '../../img/profile_photo.png';
 
 import './styles.css';
 
 const styles = theme => ({
-    button: {
-      margin: theme.spacing.unit,
-    },
-    input: {
-      display: 'none',
-    },
-  });
+  button: {
+    margin: theme.spacing.unit,
+  },
+  input: {
+    display: 'none',
+  },
+});
 
 class About extends Component {
   render() {
     const { classes } = this.props;
 
     return (
-     <WrapperComponent>
+      <WrapperComponent>
         <div className="about">
           <div className="about__container">
+            <img className="about__profilephoto" src={profile_image} width="250px" />
             <div className="about__content">
               <div>
                 <p>Hi there!</p>
-                <p>I am a recent graduate from Queen's University with a B.A Honours in the Computing and Creative Arts Specialization. I have experience as a graphic designer and front-end developer...
+                <p>I am a recent graduate from Queen's University with a B.A Honours in the Computing and Creative Arts Specialization. I have experience as a graphic designer and as a front-end developer. I love to build and design websites and apps with beautiful interfaces and meaningful user experiences.
                 </p>
               </div>
             </div>
 
-            <h3>what I am up to...</h3>
+            <p>What I am up to...</p>
             <ul>
               <li>working part-time on contract with QoC Health Inc</li>
               <li>seeking a full-time job as a front end developer</li>
@@ -40,7 +42,7 @@ class About extends Component {
               <li>working to gather people to create a "company" to solve solutions we would like to tackle</li>
             </ul>
 
-            <p>Feel free to contact me at: 647 909 3876 or shirley.xiao1996@gmail.com</p>
+            <p>Please email me at shirley.xiao1996@gmail.com or reach out to me on social media.</p>
           </div>
           <div className="about__links">
             <div className="about__header">

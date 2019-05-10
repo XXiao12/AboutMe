@@ -27,9 +27,10 @@ import './styles.css';
 const CST = (props = {}) => {
     return (
         <ProjectWrapper projectkey="CST">
+            <p>This is a student-run organization at Queen's University. I managed advertising and product designs for Colliding Scopes Theatre. I worked with the cast and members to create posters, tickets, banner, and props required for theatrical work. Advertisements circulated in the community resulted in increased sales.</p>
             <h3>Planning</h3>
             <div>
-                <p>Premiliniary note taking from meetings with the board and ensemble. I went every week to listen in to their discussions about the play to get ideas for the graphics/props I will need to design.</p>
+                <p>Premiliniary note taking from meetings with the board and ensemble. I went every week to listen in to their discussions about the play to get ideas for the graphics/props I will need to design.<br/>I try to create as many different types of compositions whether it be a poster or logo. I would then narrow it down to the top 3 or 4 compositions I like the best. From there I will continue refining the top selections and prepare them to be presented to the rest of the board and ensemble.</p>
                 <div className="CST__images">
                     <Gallery
                         images={[
@@ -56,11 +57,10 @@ const CST = (props = {}) => {
                         ]}
                     />
                 </div>
-                <p>I try to create as many different types of compositions whether it be a poster or logo. I would then narrow it down to the top 3 or 4 composiitons I like the best. From there I will continue refining the top selections and prepare them to be presented to the rest of the board and ensemble.</p>
             </div>
             <div>
                 <h3>Final Product</h3>
-                <p>This is the final choice made by the theatre group.</p>
+                <p>This is the final group of deliverables made by the theatre group. There are others but mostly variations of the banner. On different days, they would want banners with different types of text on them.</p>
                 <div className="CST__images">
                     <Gallery
                         images={[
