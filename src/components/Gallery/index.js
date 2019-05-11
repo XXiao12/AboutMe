@@ -54,7 +54,6 @@ class Gallery extends Component {
 	}
 	renderGallery () {
 		const { images } = this.props;
-		console.log("images: ", images);
 
 		if (!images) return;
 

@@ -26,7 +26,6 @@ const ProjectWrapper = (props = {}) => {
     const project = _.chain(routeProjects)
         .reduce((acc, value, key) => key === projectkey ? value : acc, {})
         .value();
-    console.log('project: ', project);
 
     return (
         <Wrapper>
