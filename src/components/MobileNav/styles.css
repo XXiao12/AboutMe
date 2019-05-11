@@ -24,11 +24,12 @@
 
 .mobilenav button {
     position: absolute;
-    top: 34px;
-    right: 42px;
+    top: 32px;
+    right: 8px;
     border: none;
     background: transparent;
     cursor: pointer;
+    width: 13%;
 }
 
 .mobilenav button:focus {
@@ -36,7 +37,7 @@
 }
 
 .mobilenav button img {
-    width: 230%;
+    width: 100%;
 }
 
 .mobilenav div a {
