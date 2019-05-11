@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* opacity: 0.5; */   
+    /* opacity: 0.5;    */
 }
 
 .mobilenav div {
@@ -49,4 +49,25 @@
 
 .active {
     color: #0080ff;
+}
+
+@media screen and (max-width: 420px) {
+    .mobilenav button {
+        width: 15%;
+        top: 38px;
+        right: 11px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .mobilenav button {
+        top: 42px;
+        right: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .mobilenav button {
+        top: 45px;
+        right: 13px;
+    }
 }

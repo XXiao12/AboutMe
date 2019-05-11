@@ -39,9 +39,6 @@
     outline: none;
 }
 
-.navbar__button img:hover {
-    background-color: #0080ff;
-}
 .active {
     color: #0080ff !important;
 }
