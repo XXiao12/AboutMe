@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import close from '../../img/menu/close.svg';
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import './styles.css';
 
@@ -12,20 +12,22 @@ const MobileNav = (props = {}) => {
     } = props;
 
     return hidden ?
-        <div className="mobilenav__hidden"/> :
+        <div className="mobilenav__hidden" /> :
         <div className="mobilenav">
             <button onClick={onClick} ><img src={close} alt="close" /></button>
             <div>
-                <Link
+                <NavLink
+                    activeClassName="active"
                     className="links--themeblack"
                     to="/portfolio">
                     Portfolio
-            </Link>
-                <Link
+            </NavLink>
+                <NavLink
+                    activeClassName="active"
                     className="links--themeblack"
                     to="/about">
                     About
-            </Link>
+            </NavLink>
             </div>
         </div>
 };

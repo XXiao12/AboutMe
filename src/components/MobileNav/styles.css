@@ -7,8 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* opacity: 0.5; */
-    
+    /* opacity: 0.5; */   
 }
 
 .mobilenav div {
@@ -46,4 +45,8 @@
 
 .mobilenav__hidden {
     display: none;
+}
+
+.active {
+    color: #0080ff;
 }
