@@ -1,11 +1,15 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { NavLink, Link } from 'react-router-dom'
 import menuIcon from '../../img/menu/hamburger2x.png';
 
 import './styles.css';
 
-const NavBar = () => {
+const NavBar = (props = {}) => {
+    const {
+        onClick
+    } = props;
+
     return (
         <div className="navbar">
             <div className="navbar__contents">
@@ -26,12 +30,16 @@ const NavBar = () => {
                     About
                 </NavLink>
             </div>
-                <img className="navbar__button" src={menuIcon} alt="Menu Icon" />
+                <button className="navbar__button" onClick={onClick} >
+                    <img src={menuIcon} alt="Menu Icon" />
+                </button>
             </div>
         </div>
     );
 };
 
-NavBar.propTypes = {};
+NavBar.propTypes = {
+    onClick: PropTypes.func
+};
 
 export default NavBar;

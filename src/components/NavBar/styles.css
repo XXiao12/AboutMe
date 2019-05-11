@@ -27,14 +27,19 @@
     cursor: pointer;
     display: none;
     width: 8%;
-    background-color: black
+    background-size: 100%;
+    padding: 0;
+}
+.navbar__button img {
+    background-color: black;
+    width: 100%;
 }
 
 .navbar__button:focus {
     outline: none;
 }
 
-.navbar__button:hover {
+.navbar__button img:hover {
     background-color: #0080ff;
 }
 .active {

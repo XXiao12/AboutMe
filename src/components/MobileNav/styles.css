@@ -1,0 +1,48 @@
+.mobilenav {
+    position: absolute;
+    background: white;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* opacity: 0.5; */
+    
+}
+
+.mobilenav div {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.mobilenav button {
+    position: absolute;
+    top: 34px;
+    right: 42px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobilenav button:focus {
+    outline: none;
+}
+
+.mobilenav button img {
+    width: 230%;
+}
+
+.mobilenav div a {
+    font-size: 2em;
+}
+
+.mobilenav__hidden {
+    display: none;
+}
