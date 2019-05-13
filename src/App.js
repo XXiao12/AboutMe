@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
+// import { createBrowserHistory } from 'history'
+import { ScrollContext } from 'react-router-scroll-4';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Splash from './containers/Splash/splash';
 import importfacts from './facts';
@@ -13,7 +15,7 @@ import enin140 from './containers/Portfolio/ENIN140';
 import cst from './containers/Portfolio/CST';
 
 
-const demoAsyncCall=() => {
+const demoAsyncCall = () => {
   return new Promise((resolve) => setTimeout(() => resolve(), 1500));
 }
 
@@ -25,23 +27,28 @@ class App extends Component {
       facts: importfacts
     }
     this.handleRemove = this.handleRemove.bind(this);
+    // this.resetScroll = this.resetScroll.bind(this);
   }
 
   componentDidMount() {
     demoAsyncCall()
-      .then(() => this.setState({loading:false}))
+      .then(() => this.setState({ loading: false }))
   }
 
   handleRemove(i) {
     if (i === 0) {
-      this.setState({facts: importfacts});
+      this.setState({ facts: importfacts });
     }
     else {
       let newFacts = this.state.facts.slice();
       newFacts.splice(i, 1);
-      this.setState({facts: newFacts})
+      this.setState({ facts: newFacts })
     }
   }
+
+  // resetScroll() {
+  //   window.scrollTo(0, 0);
+  // }
 
   render() {
     const {
@@ -51,26 +58,26 @@ class App extends Component {
 
     if (loading) {
       return <div className="loading">
-                <Loader
-                  type="Grid"
-                  color="#00BFFF"
-                  height="80"
-                  width="80"
-                />
-                {
-                  facts.map((fact, i) => 
-                    <div key={i} className="info" onClick={() => this.handleRemove(i)}>
-                      <h2>{fact}</h2>
-                      <p>[click white box to see more facts about me]</p>
-                    </div>)
-                }
-              </div>
+        <Loader
+          type="Grid"
+          color="#00BFFF"
+          height="80"
+          width="80"
+        />
+        {
+          facts.map((fact, i) =>
+            <div key={i} className="info" onClick={() => this.handleRemove(i)}>
+              <h2>{fact}</h2>
+              <p>[click white box to see more facts about me]</p>
+            </div>)
+        }
+      </div>
     }
     return (
       <BrowserRouter>
-        <div className="app">
+        <ScrollContext>
           <Switch>
-          <Route exact path="/" component={Splash} />
+            <Route exact path="/" component={Splash} />
             <Route exact path="/portfolio" component={portfolio} />
             <Route exact path="/about" component={about} />
             <Route exact path="/enin240" component={enin240} />
@@ -79,7 +86,7 @@ class App extends Component {
             <Route exact path="/colliding_scopes_theatre" component={cst} />
             <Route component={error} />
           </Switch>
-        </div>
+        </ScrollContext>
       </BrowserRouter>
     );
   }
