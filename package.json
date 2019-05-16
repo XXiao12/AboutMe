@@ -24,7 +24,7 @@
     "start": "react-scripts start",
     "start:dev": "webpack-dev-server --mode development",
     "dev": "webpack --mode development --module-bind js=babel-loader",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --module-bind js=babel-loader",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
