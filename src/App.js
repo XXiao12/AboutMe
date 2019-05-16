@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 // import { createBrowserHistory } from 'history'
-import { ScrollContext } from 'react-router-scroll-4';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Splash from './containers/Splash/splash';
 import importfacts from './facts';
@@ -75,7 +74,6 @@ class App extends Component {
     }
     return (
       <BrowserRouter>
-        <ScrollContext>
           <Switch>
             <Route exact path="/" component={Splash} />
             <Route path="/portfolio" component={portfolio} />
@@ -86,7 +84,6 @@ class App extends Component {
             <Route path="/colliding_scopes_theatre" component={cst} />
             <Route component={error} />
           </Switch>
-        </ScrollContext>
       </BrowserRouter>
     );
   }

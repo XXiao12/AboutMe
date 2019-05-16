@@ -18,6 +18,10 @@
 .env.test.local
 .env.production.local
 
+.babelrc
+bundle.js
+webpack.config.js
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
