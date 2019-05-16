@@ -78,12 +78,12 @@ class App extends Component {
         <ScrollContext>
           <Switch>
             <Route exact path="/" component={Splash} />
-            <Route exact path="/portfolio" component={portfolio} />
-            <Route exact path="/about" component={about} />
-            <Route exact path="/enin240" component={enin240} />
-            <Route exact path="/enin140" component={enin140} />
-            <Route exact path="/living_in_technicolour" component={lit} />
-            <Route exact path="/colliding_scopes_theatre" component={cst} />
+            <Route path="/portfolio" component={portfolio} />
+            <Route path="/about" component={about} />
+            <Route path="/enin240" component={enin240} />
+            <Route path="/enin140" component={enin140} />
+            <Route path="/living_in_technicolour" component={lit} />
+            <Route path="/colliding_scopes_theatre" component={cst} />
             <Route component={error} />
           </Switch>
         </ScrollContext>

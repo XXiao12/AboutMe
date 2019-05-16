@@ -52,6 +52,15 @@ class Home extends Component {
 
           <h2>Other works</h2>
           <div>
+          <Button
+                variant="outlined"
+                href="https://dribbble.com/shirley_x"
+                target="_blank"
+                rel="noopener noreferrer"
+                color="inherit"
+                className={classes.button}>
+                Dribbble
+            </Button>
             <Button
               variant="outlined"
               href="https://dribbble.com/shirley_x"
