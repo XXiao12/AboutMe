@@ -42,7 +42,7 @@ class About extends Component {
               <li>working to gather people to create a "company" to solve solutions we would like to tackle</li>
             </ul>
 
-            <p>Please email me at shirley.xiao1996@gmail.com or reach out to me on social media.</p>
+            <p>Please email me at shirley.xiao1996@gmail.com or reach out to me on social media through the links below.</p>
           </div>
           <div className="about__links">
             <div className="about__header">
