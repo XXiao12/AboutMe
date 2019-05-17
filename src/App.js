@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
 // import { createBrowserHistory } from 'history'
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
@@ -73,7 +73,7 @@ class App extends Component {
       </div>
     }
     return (
-      <BrowserRouter>
+      <HashRouter>
           <Switch>
             <Route exact path="/" component={Splash} />
             <Route path="/portfolio" component={portfolio} />
@@ -84,7 +84,7 @@ class App extends Component {
             <Route path="/colliding_scopes_theatre" component={cst} />
             <Route component={error} />
           </Switch>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
