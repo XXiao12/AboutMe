@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:dev": "webpack-dev-server --mode development",
+    "start:dev": "webpack-dev-server --config ./webpack.config.js --mode development",
     "dev": "webpack --mode development --module-bind js=babel-loader",
     "build": "webpack --mode production --module-bind js=babel-loader",
     "test": "react-scripts test",
