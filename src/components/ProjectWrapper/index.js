@@ -31,7 +31,7 @@ const ProjectWrapper = (props = {}) => {
         <Wrapper>
             <div className="projectwrapper">
                 <div className="projectwrapper__header">
-                    <h2>{project.title}</h2>
+                    <h1>{project.title}</h1>
                     <p>{project.location} | {project.timerange}</p>
                 </div>
                 <div className="projectwrapper__contents">
