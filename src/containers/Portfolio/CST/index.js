@@ -27,10 +27,10 @@ import './styles.css';
 const CST = (props = {}) => {
     return (
         <ProjectWrapper projectkey="CST">
-            <p>This is a student-run organization at Queen's University. I managed advertising and product designs for Colliding Scopes Theatre. I worked with the cast and members to create posters, tickets, banner, and props required for theatrical work. Advertisements circulated in the community resulted in increased sales.</p>
+            <p>Colliding Scopes Theatre is a student-run organization at Queen's University. Every year they create a team and a theme for what kind of play the theatre group would like to create. My year was a play based of works by H. P. Lovecraft. Everybody would read works by H. P. Lovecraft so people can get inspired for what role the are in for this play. My role was graphic designer. I help manage advertising and product designs for Colliding Scopes Theatre. I also worked with the cast and members to create posters, tickets, banner, and props required for theatrical work. The deliverables that circulated in the community resulted in a 10% increase in sales.</p>
             <h2>Planning</h2>
             <div>
-                <p>Premiliniary note taking from meetings with the board and ensemble. I went every week to listen in to their discussions about the play to get ideas for the graphics/props I will need to design.<br/>I try to create as many different types of compositions whether it be a poster or logo. I would then narrow it down to the top 3 or 4 compositions I like the best. From there I will continue refining the top selections and prepare them to be presented to the rest of the board and ensemble.</p>
+                <p>Premiliniary note taking from meetings with the board and ensemble. I went every week to listen in to their discussions about the play to get ideas for the graphics/props I will need to design. I try to create as many different types of compositions whether it be a poster or logo. I would then narrow it down to the top 3 or 4 compositions I like the best. From there I will continue refining the top selections and prepare them to be presented to the rest of the board and ensemble.</p>
                 <div className="CST__images">
                     <Gallery
                         images={[

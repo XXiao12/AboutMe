@@ -21,7 +21,7 @@ const Error = (props = {}) => {
         classes
     } = props;
 
-    const portfolioLink = props => <Link to="/" {...props} />;
+    const portfolioLink = props => <Link to="/portfolio" {...props} />;
     const aboutLink = props => <Link to="/about" {...props} />;
 
 
