@@ -36,10 +36,9 @@ class About extends Component {
             <p>What I am up to...</p>
             <ul>
               <li>working part-time on contract with QoC Health Inc</li>
-              <li>seeking a full-time job as a front end developer</li>
+              <li>seeking a full-time job as a Web Designer / Developer</li>
               <li>continue to update and find ways to improve this portfolio site</li>
-              <li>continue to take courses with IDF (Interactive Design Foundation)</li>
-              <li>working to gather people to create a "company" to solve solutions we would like to tackle</li>
+              <li>continue to take courses with IDF (<a href="https://www.interaction-design.org/" >Interactive Design Foundation</a>)</li>
             </ul>
 
             <p>Please email me at shirley.xiao1996@gmail.com or reach out to me on social media through the links below.</p>

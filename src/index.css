@@ -48,6 +48,10 @@ body, #root, .app {
   font-size: calc( 12px + (26 - 12)* ((100vw - 400px) / (1920 - 400)));
 }
 
+a {
+  color: black;
+}
+
 p {
   font-weight: 200;
   font-size: 16px;
