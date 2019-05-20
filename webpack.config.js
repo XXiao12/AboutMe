@@ -1,7 +1,8 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const ManifestPlugin = require('webpack-manifest-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
     mode: 'development',
@@ -55,9 +56,9 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: path.resolve('./public/index.html'),
         }),
-        new CopyWebpackPlugin([
-        // relative path is from src
-        { from: './public/favicon.ico' },
-        ])
+        new CopyWebpackPlugin([{
+            from: './public/favicon.ico'
+        }]),
+        new ManifestPlugin()
     ]
 };
