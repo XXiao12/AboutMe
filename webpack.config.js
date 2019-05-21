@@ -7,7 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var CompressionPlugin = require("compression-webpack-plugin");
 const path = require('path');
 const webpack = require('webpack');
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const DefaultUglifyJsOptions = UglifyJS.default_options();
 const compress = DefaultUglifyJsOptions.compress;
@@ -142,6 +142,6 @@ module.exports = {
             filename: '[name].css',
             chunkFilename: '[id].css',
         }),
-        new BundleAnalyzerPlugin()
+        // new BundleAnalyzerPlugin()
     ]
 };
