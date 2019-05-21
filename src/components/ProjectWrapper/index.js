@@ -1,5 +1,5 @@
 import React from 'react';
-import chain from 'lodash/chain';
+import _ from 'lodash';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
@@ -23,7 +23,7 @@ const ProjectWrapper = (props = {}) => {
         children
     } = props;
 
-    const project = chain(routeProjects)
+    const project = _.chain(routeProjects)
         .reduce((acc, value, key) => key === projectkey ? value : acc, {})
         .value();
 
