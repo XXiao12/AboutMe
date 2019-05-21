@@ -13,7 +13,7 @@ import plan5 from '../../../img/CST/IMG_2553.jpg';
 import plan5S from '../../../img/CST/IMG_2553s.jpg';
 import logo from '../../../img/CST/logo.jpg';
 import logoS from '../../../img/CST/logos.jpg';
-import posterO from '../../../img/CST/posterO.png';
+import posterO from '../../../img/CST/posterO.jpg';
 import posterOS from '../../../img/CST/posterOs.png';
 import posterN from '../../../img/CST/posterN.png';
 import posterNS from '../../../img/CST/posterNs.png';
