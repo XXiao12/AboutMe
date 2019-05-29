@@ -30,7 +30,6 @@ class Splash extends Component {
           <div className="content">
           {/* <img rel="preload" src={mylogo} alt="mylogo" width="50px" height="50px" /> */}
           <p>Shirley Xiao</p>
-          <p className="message">Site Currently Under Construction</p>
           <div className="nav">
             <Button
               variant="outlined"
