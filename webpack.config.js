@@ -89,6 +89,12 @@ module.exports = {
             }
         ]
     },
+    node: {
+        fs: 'empty',
+        net: 'empty',
+        tls: 'empty',
+        dns: 'empty'
+    },
     optimization: {
         minimize: true,
         minimizer: [
