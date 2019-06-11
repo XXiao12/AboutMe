@@ -14,9 +14,10 @@ class WrapperComponent extends Component {
             hideModal: this.props.hideModal ? this.props.hideModal : true,
             modalMessage: "",
             modalName: "",
-            mail: {
+            mail_notification: {
                 success: "Email Successfully Sent!",
                 fail: "Oh no! The email has could not be sent.",
+                other: "",
             }
         };
         this.onCloseNav = this.onCloseNav.bind(this);
@@ -46,34 +47,45 @@ class WrapperComponent extends Component {
 
     updateAndNotify() {
         const {
-            mail,
+            mail_notification,
         } = this.state;
         const {
             mailSent,
-            mailSentError
+            mailSentError,
+            notification
         } = this.props;
-
-        if (mailSent) {
+        if (notification !== '') {
             this.setState({
                 hideModal: false,
-                modalMessage: mail.success,
-                modalName: "Success"
+                modalMessage: notification,
+            });
+            setTimeout(() => {
+                this.setState({
+                    hideModal: true,
+                    modalMessage: ""
+                });
+            }, 5000);
+        } else if (mailSent) {
+            this.setState({
+                hideModal: false,
+                modalMessage: mail_notification.success,
             });
 
             setTimeout(() => {
                 this.setState({
-                    hideModal: true
+                    hideModal: true,
+                    modalMessage: ""
                 });
             }, 5000);
         } else if (mailSentError) {
             this.setState({
                 hideModal: false,
-                modalMessage: mail.success,
-                modalName: "Failed"
+                modalMessage: mail_notification.fail,
             });
             setTimeout(() => {
                 this.setState({
-                    hideModal: true
+                    hideModal: true,
+                    modalMessage: ""
                 });
             }, 5000);
         }
