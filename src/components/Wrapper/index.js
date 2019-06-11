@@ -9,13 +9,12 @@ class WrapperComponent extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            children: this.props.children,
             hidden: this.props.hidden ? this.props.hidden : true
         }
-        this.onClick = this.onClick.bind(this);
+        this.onClickNav = this.onClickNav.bind(this);
     }
 
-    onClick() {
+    onClickNav() {
         const { hidden } = this.state;
         if (hidden) {
             this.setState({ hidden: false });
@@ -26,16 +25,17 @@ class WrapperComponent extends Component {
     }
 
     render() {
-        const { children, hidden } = this.state;
+        const { hidden } = this.state;
+        const { children } = this.props;
 
         return (
             <div>
-                <MobileNav 
-                hidden={hidden}
-                onClick={this.onClick} 
+                <MobileNav
+                    hidden={hidden}
+                    onClick={this.onClickNav}
                 />
                 <div className="wrapper">
-                    <NavBar onClick={this.onClick} />
+                    <NavBar onClick={this.onClickNav} />
                     {children}
                 </div >
             </div>

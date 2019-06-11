@@ -21,11 +21,11 @@ class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fname: this.props.fname,
-      lname: this.props.lname,
-      email: this.props.email,
-      subject: this.props.subject,
-      message: this.props.message,
+      fname: '',
+      lname: '',
+      email: '',
+      subject: '',
+      message: '',
       mailSent: false,
       error: null
     }
@@ -51,7 +51,6 @@ class About extends Component {
       subject: subject,
       message_html: message
     };
-
     emailjs.send(
       'gmail',
       'template_1lmaf88P',
@@ -61,27 +60,24 @@ class About extends Component {
       console.log(response.status, response.text);
     }, error => {
       console.log(error);
+      this.setState({ error: error });
     });
+    this.resetForm();
+  }
+
+  handleTextChange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+  }
+
+  resetForm() {
+    console.log('reset form');
     this.setState({
       fname: '',
       lname: '',
       email: '',
       message: '',
-      subject: ''
-    })
-  }
-
-  handleTextChange(param, event) {
-    console.log(param, ": ", event.target.value)
-    this.setState({ [param]: event.target.value });
-  }
-
-  resetForm() {
-    this.setState({
-      name: '',
-      message: '',
-      email: '',
-      buttonText: 'Message Sent'
+      subject: '',
+      mailSent: true
     });
   }
 
@@ -114,26 +110,27 @@ class About extends Component {
             <div>
               <form
                 id="contact-form"
-                onSubmit={e => this.handleFormSubmit(e)}
+                onSubmit={this.handleFormSubmit}
                 method="POST"
               >
                 <label>First Name</label>
                 <input
                   type="text"
                   id="fname"
-                  name="firstname"
+                  name="fname"
                   placeholder="Your name.."
+                  defaultValue=""
                   value={this.state.fname}
-                  onChange={e => this.handleTextChange('fname', e)}
+                  onChange={this.handleTextChange}
                 />
                 <label>Last Name</label>
                 <input
                   type="text"
                   id="lname"
-                  name="lastname"
+                  name="lname"
                   placeholder="Your last name.."
                   value={this.state.lname}
-                  onChange={e => this.handleTextChange('lname', e)}
+                  onChange={this.handleTextChange}
                 />
 
                 <label>Email</label>
@@ -143,7 +140,7 @@ class About extends Component {
                   name="email"
                   placeholder="Your email"
                   value={this.state.email}
-                  onChange={e => this.handleTextChange('email', e)}
+                  onChange={this.handleTextChange}
                 />
 
                 <label>Subject</label>
@@ -153,7 +150,7 @@ class About extends Component {
                   name="subject"
                   placeholder="subject"
                   value={this.state.subject}
-                  onChange={e => this.handleTextChange('subject', e)}
+                  onChange={this.handleTextChange}
                 />
 
                 <label>Message</label>
@@ -162,9 +159,14 @@ class About extends Component {
                   name="message"
                   placeholder="Write something.."
                   value={this.state.message}
-                  onChange={e => this.handleTextChange('message', e)}
+                  onChange={this.handleTextChange}
                 ></textarea>
-                <button id="submit" type="submit">Submit</button>
+                <button
+                  id="submit"
+                  type="submit"
+                >
+                  Submit
+                </button>
               </form>
               <p>You could also email me directly at shirley.xiao1996@gmail.com or reach out to me on social media through the links below.</p>
             </div>
