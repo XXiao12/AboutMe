@@ -11,8 +11,6 @@ const Modal = (props = {}) => {
         hidden
     } = props;
 
-    console.log('Modal message: ', message);
-
     return hidden ? null :
         <div className="modal">
             <div className="paper">

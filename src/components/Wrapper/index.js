@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {withRouter} from 'react-router-dom';
 import MobileNav from '../MobileNav';
 import NavBar from '../NavBar';
 import Modal from '..//Modal/index';
@@ -92,7 +93,11 @@ class WrapperComponent extends Component {
 
     }
     componentDidUpdate(prevProps, prevState, snapshot) {
-        if (prevProps != this.props) {
+        const {
+            pathname
+        } = this.props.location
+
+        if (pathname === '/about' && (prevProps != this.props)) {
             this.updateAndNotify()
         }
     }
@@ -101,12 +106,9 @@ class WrapperComponent extends Component {
         const {
             hideNav,
             hideModal,
-            // modalName,
-            modalMessage,
-            mail
+            modalMessage
         } = this.state;
         const { children } = this.props;
-        console.log('render this.state: ', this.state);
 
         return (
             <div>
@@ -131,7 +133,10 @@ class WrapperComponent extends Component {
 WrapperComponent.propTypes = {
     hidden: PropTypes.bool,
     children: PropTypes.element,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    mailSent: PropTypes.bool,
+    mailSentError: PropTypes.string,
+    notification: PropTypes.string
 };
 
-export default WrapperComponent;
+export default withRouter(WrapperComponent);

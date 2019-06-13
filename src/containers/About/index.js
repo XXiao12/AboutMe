@@ -36,7 +36,6 @@ class About extends Component {
 
   handleFormSubmit(e) {
     e.preventDefault();
-    console.log('aaaaa: ', this.state);
     const {
       fname,
       email,
@@ -63,7 +62,6 @@ class About extends Component {
         params,
         'user_KR8ZB8faeOR2mUvgy5haL'
       ).then(response => {
-        console.log(response.status, response.text);
         this.resetForm();
       }, error => {
         console.log(error);
