@@ -73,10 +73,10 @@ class About extends Component {
   }
 
   handleTextChange(event) {
-    this.setState({ 
+    this.setState({
       [event.target.name]: event.target.value,
       notification: '',
-     });
+    });
   }
 
   resetForm() {
@@ -106,22 +106,45 @@ class About extends Component {
       >
         <div className="about">
           <div className="about__container">
-            <img className="about__profilephoto" src={profile_image} alt="profile" width="130px" />
+            <img className="about__profilephoto" src={profile_image} alt="profile" width="200px" height="200px" />
             <div className="about__content">
-              <div>
-                <h2>Hi there!</h2>
-                <p>I am a recent graduate from Queen's University with a B.A Honours in the Computing and Creative Arts Specialization. I have experience as a graphic designer and as a front-end developer. I love to build and design websites and apps with beautiful interfaces and meaningful user experiences.</p>
+              <div className="about__content--center">
+                <h1>Hi there!</h1>
+                <p>My name is Shirley Xiao. I am a multi-disiplined designer with skills ranging from graphic design, product design, and photography all the way to front-end development.</p>
+              </div>
+              <div className="about__links">
+                <div className="about__buttons">
+                  <Button
+                    variant="outlined"
+                    href="https://github.com/XXiao12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="inherit"
+                    className={classes.button}>
+                    Github
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="inherit" className={classes.button}>
+                    LinkedIn
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    href="https://dribbble.com/shirley_x"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="inherit"
+                    className={classes.button}>
+                    Dribbble
+                  </Button>
+                </div>
               </div>
             </div>
-
-            <h2>What I am up to...</h2>
-            <ul>
-              <li>working part-time on contract with QoC Health Inc</li>
-              <li>seeking a full-time job as a Web Designer / Developer</li>
-              <li>continue to update and find ways to improve this portfolio site</li>
-              <li>continue to take courses with IDF (<a href="https://www.interaction-design.org/" >Interactive Design Foundation</a>)</li>
-            </ul>
           </div>
+
           <div className="about__container">
             <h2>I am always open to feedback!</h2>
             <p>Let me know what I am doing wrong or what I am doing right.<br />Feel free to also use this form for other inquiries as well.</p>
@@ -177,40 +200,6 @@ class About extends Component {
                   Submit
                 </button>
               </form>
-              <p>You could also email me directly at shirley.xiao1996@gmail.com or reach out to me on social media through the links below.</p>
-            </div>
-          </div>
-          <div className="about__links">
-            <div className="about__header">
-              <h2>You can also find me on</h2>
-            </div>
-            <div className="about__buttons">
-              <Button
-                variant="outlined"
-                href="https://github.com/XXiao12"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                className={classes.button}>
-                Github
-            </Button>
-              <Button
-                variant="outlined"
-                href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit" className={classes.button}>
-                LinkedIn
-            </Button>
-              <Button
-                variant="outlined"
-                href="https://dribbble.com/shirley_x"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                className={classes.button}>
-                Dribbble
-            </Button>
             </div>
           </div>
         </div>
