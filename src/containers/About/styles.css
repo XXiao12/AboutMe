@@ -30,7 +30,7 @@
 .about__container {
     display: inline-block;
     position: relative;
-    border: 2px solid #ffa264;
+    border: 1px solid #ffa264;
     background-color: #FFF3EB;
     padding: 32px;
     margin-bottom: 32px;
@@ -80,7 +80,7 @@ form {
     resize: vertical;
 }
 #submit {
-    background-color: #0080ff;
+    background-color:#ffa264;
     color: white;
     padding: 12px 20px;
     border: none;

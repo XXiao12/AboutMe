@@ -23,36 +23,8 @@ class Home extends Component {
     return (
       <WrapperComponent>
         <div className="home">
-          {/* <div className="home__banner">[create graphic]</div> */}
-          {/* <ProjectButton
-            name="ENIN 240 - 
-            Explorations in Creativity"
-            descriptionTag="creativity"
-            location="Queen's University"
-            link="/enin240"
-          />
-          <ProjectButton
-            name="ENIN 140 - Design Thinking"
-            descriptionTag="design_thinking"
-            location="Queen's University"
-            link="/enin140"
-          />
-           <ProjectButton
-            name="Living in Technicolour"
-            descriptionTag="LIT"
-            location="Queen's University"
-            link="/living_in_technicolour"
-          /> */}
-          <ProjectButton
-            name="Colliding Scopes Theatre"
-            descriptionTag="CST"
-            location="Queen's University"
-            link="/colliding_scopes_theatre"
-          />
-
-          <h2>Other works</h2>
           <div>
-          <Button
+            <Button
               variant="outlined"
               href="https://shirley.portfoliobox.net/"
               target="_blank"
@@ -61,35 +33,23 @@ class Home extends Component {
               className={classes.button}>
               Old site
             </Button>
-          <Button
-                variant="outlined"
-                href="https://dribbble.com/shirley_x"
-                target="_blank"
-                rel="noopener noreferrer"
-                color="inherit"
-                className={classes.button}>
-                Dribbble
-            </Button>
-            {/* <Button
+            <Button
               variant="outlined"
               href="https://dribbble.com/shirley_x"
               target="_blank"
-              disabled
               rel="noopener noreferrer"
               color="inherit"
               className={classes.button}>
-              Photography
+              Dribbble
             </Button>
-            <Button
-              variant="outlined"
-              href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
-              target="_blank"
-              disabled
-              rel="noopener noreferrer"
-              color="inherit"
-              className={classes.button}>
-              Development
-            </Button> */}
+          </div>
+          <div className="projects">
+            <ProjectButton
+              name="Colliding Scopes Theatre"
+              descriptionTag="CST"
+              location="Queen's University"
+              link="/colliding_scopes_theatre"
+            />
           </div>
         </div >
       </WrapperComponent>

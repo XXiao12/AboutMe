@@ -30,10 +30,10 @@ const projects = {
         title: "Colliding Scopes Theatre - Graphic Designer",
         location: "Queen's University",
         timerange: "October 2015 to April 2016",
-        linkR: "/enin240",
-        linkL: "/living_in_technicolour",
-        btntextR: "ENIN 240",
-        btntextL: "Living in Technicolour"
+        linkR: "",
+        linkL: "",
+        btntextR: "",
+        btntextL: ""
     }
 };
 

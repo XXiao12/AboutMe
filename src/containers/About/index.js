@@ -108,7 +108,7 @@ class About extends Component {
             <div className="about__content">
               <div className="about__content--center">
                 <h1>Hi there!</h1>
-                <p>My name is Shirley Xiao. I am a multi-disiplined designer with skills ranging from graphic design, product design, and photography all the way to front-end development.</p>
+                <p>My name is Shirley Xiao. I am a multi-disiplined designer with skills ranging from design to front-end development.</p>
               </div>
               <div className="about__links">
                 <div className="about__buttons">
