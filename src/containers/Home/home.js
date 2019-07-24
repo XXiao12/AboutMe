@@ -26,12 +26,12 @@ class Home extends Component {
           <div>
             <Button
               variant="outlined"
-              href="https://shirley.portfoliobox.net/"
+              href="https://shirley.portfoliobox.net/graphicdesign"
               target="_blank"
               rel="noopener noreferrer"
-              color="primary"
+              color="inherit"
               className={classes.button}>
-              Old site
+              Old Work
             </Button>
             <Button
               variant="outlined"
@@ -41,6 +41,14 @@ class Home extends Component {
               color="inherit"
               className={classes.button}>
               Dribbble
+            </Button>
+            <Button
+              variant="outlined"
+              href="https://shirleyxiao1996.wixsite.com/mysite"
+              rel="noopener noreferrer"
+              color="inherit"
+              className={classes.button}>
+              Private Projects
             </Button>
           </div>
           <div className="projects">
