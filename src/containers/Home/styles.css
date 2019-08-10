@@ -3,3 +3,38 @@
     background-color: gray;
     height: 200px;
 }
+
+.home__button a {
+    margin-left: 0;
+}
+
+.home__private,
+.home__old,
+.home__dribbble {
+    font-size: 13px;
+}
+
+span {
+    display: inline-block;
+}
+
+.home__private span {
+    font-weight: 600;
+    color: #0080ff;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.home__old span {
+    font-weight: 600;
+    color: #6b0707;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.home__dribbble span {
+    font-weight: 600;
+    color: #ea4c89;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
