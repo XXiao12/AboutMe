@@ -34,11 +34,11 @@ const styles = theme => ({
     fontFamily: 'helvetica',
     textTransform: 'none',
     fontWeight: 600,
-    backgroundColor: '#fdc5dd',
+    backgroundColor: '#ffd6e8',
     color: '#ea4c89',
     "&:hover": {
       //you want this to be the same as the backgroundColor above
-      backgroundColor: "#fddae9"
+      backgroundColor: "#ffe3ef"
     }
   },
   input: {
