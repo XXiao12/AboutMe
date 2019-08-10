@@ -31,53 +31,53 @@
     align-items: center;
     text-align: center;
     min-width: 140px;
-    color: white;
+    /* color: white; */
 }
 
 span {
     display: inline-block;
 }
 .home__private {
-    background-color: #0080ff;
+    background-color: #eaf5ff;
     border: 1px solid #0080ff;
     border-radius: 4px;
     padding: 16px;
 }
 .home__private .color:first-child {
     font-weight: 600;
-    color: white;
+    color: #0080ff;
     font-size: 16px;
     margin-bottom: 16px;
 }
 
 .home__old {
-    background-color: #6b0707;
-    border: 1px solid #6b0707;
+    background-color: #f7f7f7;
+    border: 1px solid black;
     border-radius: 4px;
     padding: 16px 16px 64px 16px;
 }
 .home__old .color:first-child {
     font-weight: 600;
-    color: white;
+    color: black;
     font-size: 16px;
     margin-bottom: 16px;
 }
 
 .home__dribbble {
-    background-color: #ea4c89;
+    background-color: #fff1f7;
     margin-left: 8px;
     margin-right: 8px;
     border: 1px solid #ea4c89;
     border-radius: 4px;
     padding: 16px 16px 64px 16px;
 }
-.home__dribbble #link {
-    color: white;
+.home__dribbble #link:hover {
+    font-weight: 500;
 }
 
 .home__dribbble .color:first-child {
     font-weight: 600;
-    color: white;
+    color: #ea4c89;
     font-size: 16px;
     margin-bottom: 16px;
 }
