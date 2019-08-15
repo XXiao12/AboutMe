@@ -17,6 +17,7 @@
 
 .home__container--content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -73,6 +74,35 @@ span {
 }
 .home__dribbble #link:hover {
     font-weight: 500;
+}
+
+@media screen and (min-width: 600px) and (max-width: 665px) {
+    .home__dribbble {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 585px) {
+    .home__dribbble {
+        margin-left: 4px !important;
+        margin-right: 4px !important;
+    }
+}
+@media screen and (min-width: 410px) and (max-width: 585px) {
+    .home__dribbble {
+        margin-left: 8px;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 410px ) {
+    .home__container--content {
+        flex-direction: column;
+    }
+    .home__dribbble {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .home__dribbble .color:first-child {
