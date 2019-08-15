@@ -41,7 +41,7 @@ span {
     background-color: #eaf5ff;
     border: 1px solid #0080ff;
     border-radius: 4px;
-    padding: 16px;
+    padding: 16px 16px 64px 16px;
 }
 .home__private .color:first-child {
     font-weight: 600;
