@@ -8,9 +8,7 @@ import importfacts from './facts';
 import portfolio from './containers/Home/home';
 import about from './containers/About';
 import error from './components/404';
-import lit from './containers/Portfolio/LIT';
-import enin240 from './containers/Portfolio/ENIN240';
-import enin140 from './containers/Portfolio/ENIN140';
+import process from './containers/Portfolio/Process';
 import cst from './containers/Portfolio/CST';
 
 
@@ -78,9 +76,7 @@ class App extends Component {
             <Route exact path="/" component={Splash} />
             <Route path="/portfolio" component={portfolio} />
             <Route path="/about" component={about} />
-            <Route path="/enin240" component={enin240} />
-            <Route path="/enin140" component={enin140} />
-            <Route path="/living_in_technicolour" component={lit} />
+            <Route path="/process" component={process} />
             <Route path="/colliding_scopes_theatre" component={cst} />
             <Route component={error} />
           </Switch>

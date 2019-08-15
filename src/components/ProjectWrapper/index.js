@@ -46,7 +46,7 @@ const ProjectWrapper = (props = {}) => {
                     <Link
                         className="links--themeblack"
                         to="/portfolio">
-                        Portfolio
+                        Back to Portfolio
                     </Link>
                     <Link
                         className="links--themeblack links--disabled"

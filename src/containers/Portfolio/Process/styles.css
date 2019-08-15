@@ -1,0 +1,29 @@
+.process__steps {
+    border: 2px solid #0080ff;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.process__heading {
+    /* background-color: #0080ff; */
+    margin-top: 32px;
+    padding: 0 16px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #0080ff;
+}
+
+.process__content {
+    padding: 0 16px 0 16px;
+}
+
+.process__buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.process__buttons a {
+    margin-top: 32px;
+    margin-right: 32px;
+}
