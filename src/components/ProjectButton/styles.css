@@ -1,9 +1,11 @@
 .project {
     width: 100%;
-    min-height: 150px;
-    border: 1px solid black;
-    border-radius: 5px;
+    min-width: 200px;
+    /* border: 1px solid black;
+    border-radius: 5px; */
     margin-top: 24px;
+    width: 30%;
+    display: inline-block;
 }
 
 .project:hover {
@@ -11,18 +13,20 @@
 }
 
 .project__button {
-    margin: 32px;
+    /* margin: 32px; */
     font-family: Helvetica;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-items: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .project__button div {
     flex: 1 2 0;
-    margin-right: 32px
+    text-align: center;
 }
 
 .project__button p, h2, h3 {
@@ -32,6 +36,12 @@
 
 .project__buttondescription {
     flex: 2 1 100%;
+}
+
+#project__img {
+    background-color: grey;
+    width: 200px;
+    height: 200px;
 }
 
 .project__buttonlocation {

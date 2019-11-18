@@ -106,9 +106,9 @@ class Home extends Component {
           <h1>Recent Works</h1>
           <div className="projects">
             <ProjectButton
-              name="Colliding Scopes Theatre"
+              name="The King in Yellow"
               descriptionTag="CST"
-              location="Queen's University"
+              company="Colliding Scope Theatre"
               link="/colliding_scopes_theatre"
             />
           </div>
