@@ -4,12 +4,21 @@ import PropTypes from 'prop-types';
 import generateuuid from 'uuid';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
 import { Link } from 'react-router-dom'
 import logo from '../../img/React/logo.svg';
-// import mylogo from '../../img/sxLogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faDribbble, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 import './splash.css';
 
 const styles = theme => ({
+  enterButton: {
+    backgroundColor: '#0080ff',
+    color: 'white',
+    border: 'none',
+    margin: theme.spacing.unit,
+  },
   button: {
     margin: theme.spacing.unit,
   },
@@ -27,56 +36,50 @@ class Splash extends Component {
       <div key={generateuuid()} className="Splash">
         <div className="Splash-overlay" />
         <div className="Splash-header">
+          <div className="header">
+            <h1>Shirley Xiao</h1>
+          </div>
           <div className="content">
-          {/* <img rel="preload" src={mylogo} alt="mylogo" width="50px" height="50px" /> */}
-          <p>Shirley Xiao</p>
-          <div className="nav">
+            <p>UI/UX Designer & Developer </p>
+            <p>Everything starts with a story.</p>
             <Button
+              variant="outlined"
+              component={homeLink}
+              color="primary"
+              className={classes.enterButton}>
+              Enter Site
+            </Button>
+          </div>
+        </div>
+        <div className="Splash-footer">
+          <div className="socialMedia">
+            <IconButton
               variant="outlined"
               href="https://github.com/XXiao12"
               target="_blank"
               rel="noopener noreferrer"
               color="inherit"
               className={classes.button}>
-              Github
-            </Button>
-            <Button
+              <FontAwesomeIcon icon={faGithub} />
+            </IconButton>
+            <IconButton
               variant="outlined"
               href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
               target="_blank"
               rel="noopener noreferrer"
               color="inherit" className={classes.button}>
-              LinkedIn
-            </Button>
-            <Button
+              <FontAwesomeIcon icon={faLinkedin} />
+            </IconButton>
+            <IconButton
               variant="outlined"
               href="https://dribbble.com/shirley_x"
               target="_blank"
               rel="noopener noreferrer"
               color="inherit"
               className={classes.button}>
-              Dribbble
-            </Button>
-            <Button
-              variant="outlined"
-              href="https://shirley.portfoliobox.net/"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="primary"
-              className={classes.button}>
-              Old site
-            </Button>
-            <Button
-              variant="outlined"
-              component={homeLink}
-              color="primary"
-              className={classes.button}>
-              Enter Site
-            </Button>
+              <FontAwesomeIcon icon={faDribbble} />
+            </IconButton>
           </div>
-        </div>
-        </div>
-        <div className="Splash-footer">
           <p>
             Created with &nbsp;
             <a
