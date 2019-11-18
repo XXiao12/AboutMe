@@ -18,6 +18,11 @@ const styles = theme => ({
     color: 'white',
     border: 'none',
     margin: theme.spacing.unit,
+    '&:hover': {
+      backgroundColor: '#0159b1',
+      border: 'none',
+      color: 'white'
+    },
   },
   button: {
     margin: theme.spacing.unit,
@@ -40,8 +45,8 @@ class Splash extends Component {
             <h1>Shirley Xiao</h1>
           </div>
           <div className="content">
-            <p>UI/UX Designer & Developer </p>
-            <p>Everything starts with a story.</p>
+            <p id="title">UI/UX Designer & Developer </p>
+            <p id="blurb">Everything starts with a story.</p>
             <Button
               variant="outlined"
               component={homeLink}

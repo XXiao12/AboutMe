@@ -59,6 +59,12 @@
 .Splash-header .content {
   margin-top: 64px;
 }
+.Splash-header .content #title {
+  margin-bottom: 20px;
+}
+.Splash-header .content #blurb {
+  margin-bottom: 56px;
+}
 
 .Splash-header .content, .header {
   opacity: 1;
