@@ -13,7 +13,7 @@ const NavBar = (props = {}) => {
     return (
         <div className="navbar">
             <div className="navbar__contents">
-            <Link className="links--themeblack" to="/about">
+            <Link className="links--themeblack" to="/portfolio">
                 <h1>Shirley Xiao</h1>
             </Link>
             <div className="navbar__links">
