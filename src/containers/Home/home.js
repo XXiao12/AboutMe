@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faUserShield } from "@fortawesome/free-solid-svg-icons";
 import { faDribbble } from "@fortawesome/free-brands-svg-icons";
 
+import cstDisplayPic from '../../img/CST/cstDisplay.jpg';
+
 import "./styles.css";
 
 const styles = theme => ({
@@ -139,6 +141,7 @@ class Home extends Component {
               <ProjectButton
                 name="The King in Yellow"
                 descriptionTag="CST"
+                imgSrc={cstDisplayPic}
                 company="Colliding Scope Theatre"
                 link="/colliding_scopes_theatre"
               />
