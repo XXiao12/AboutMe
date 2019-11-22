@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
@@ -66,9 +66,11 @@ const styles = theme => ({
   }
 });
 
-class Home extends Component {
-  render() {
-    const { classes } = this.props;
+function Home(props = {}) {
+  useEffect(() => {
+    new Image().src = cstDisplayPic
+  }, []);
+    const { classes } = props;
     const Process = props => <Link to="/process" {...props} />;
 
     return (
@@ -151,7 +153,6 @@ class Home extends Component {
       </WrapperComponent>
     );
   }
-}
 
 Home.propTypes = {
   classes: PropTypes.object.isRequired
