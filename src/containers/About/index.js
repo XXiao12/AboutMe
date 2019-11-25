@@ -1,34 +1,40 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import WrapperComponent from '../../components/Wrapper';
-import profile_image from '../../img/profile_photo.png';
-import * as emailjs from 'emailjs-com';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { withStyles } from "@material-ui/core/styles";
+import IconButton from "@material-ui/core/IconButton";
+import WrapperComponent from "../../components/Wrapper";
+import profile_image from "../../img/profile_photo.png";
+import * as emailjs from "emailjs-com";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faDribbble,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
-import './styles.css';
+import "./styles.css";
 
 const styles = theme => ({
   button: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing.unit
   },
   input: {
-    display: 'none',
-  },
+    display: "none"
+  }
 });
 
 class About extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      fname: '',
-      email: '',
-      subject: '',
-      message: '',
-      notification: '',
+      fname: "",
+      email: "",
+      subject: "",
+      message: "",
+      notification: "",
       mailSent: false,
       error: null
-    }
+    };
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleTextChange = this.handleTextChange.bind(this);
     this.resetForm = this.resetForm.bind(this);
@@ -36,56 +42,58 @@ class About extends Component {
 
   handleFormSubmit(e) {
     e.preventDefault();
-    const {
-      fname,
-      email,
-      message,
-      subject
-    } = this.state;
+    const { fname, email, message, subject } = this.state;
 
-    if (fname === '' || email === '' || message === '') {
-      this.setState({ notification: "Please enter your name, email and message." });
+    if (fname === "" || email === "" || message === "") {
+      this.setState({
+        notification: "Please enter your name, email and message."
+      });
     } else if (message.length < 20) {
       this.setState({ notification: "Please provide more information :)" });
     } else {
       // this.resetForm();
       const params = {
         from_name: `${fname} (${email})`,
-        to_name: 'shirley.xiao1996@gmail.com',
+        to_name: "shirley.xiao1996@gmail.com",
         subject: subject,
         message_html: message
       };
 
-      emailjs.send(
-        'gmail',
-        'template_1lmaf88P',
-        params,
-        'user_KR8ZB8faeOR2mUvgy5haL'
-      ).then(response => {
-        this.resetForm();
-      }, error => {
-        console.log(error);
-        this.setState({ error: error });
-      });
+      emailjs
+        .send(
+          "gmail",
+          "template_1lmaf88P",
+          params,
+          "user_KR8ZB8faeOR2mUvgy5haL"
+        )
+        .then(
+          response => {
+            this.resetForm();
+          },
+          error => {
+            console.log(error);
+            this.setState({ error: error });
+          }
+        );
     }
   }
 
   handleTextChange(event) {
     this.setState({
       [event.target.name]: event.target.value,
-      notification: '',
+      notification: ""
     });
   }
 
   resetForm() {
-    console.log('reset form');
+    console.log("reset form");
     this.setState({
-      fname: '',
-      email: '',
-      message: '',
-      subject: '',
+      fname: "",
+      email: "",
+      message: "",
+      subject: "",
       mailSent: true,
-      notification: ''
+      notification: ""
     });
 
     this.setState({
@@ -104,15 +112,24 @@ class About extends Component {
       >
         <div className="about">
           <div className="about__container">
-            <img className="about__profilephoto" src={profile_image} alt="profile" width="200px" height="200px" />
+            <img
+              className="about__profilephoto"
+              src={profile_image}
+              alt="profile"
+              width="200px"
+              height="200px"
+            />
             <div className="about__content">
               <div className="about__content--center">
                 <h1>Hi there!</h1>
-                <p>My name is Shirley Xiao. I am a multi-disiplined designer with skills ranging from design to front-end development.</p>
+                <p>
+                  My name is Shirley Xiao. I am a multi-disiplined designer with
+                  skills ranging from design to front-end development.
+                </p>
               </div>
               <div className="about__links">
                 <div className="about__buttons">
-                  <Button
+                  {/* <Button
                     variant="outlined"
                     href="https://github.com/XXiao12"
                     target="_blank"
@@ -137,7 +154,37 @@ class About extends Component {
                     color="inherit"
                     className={classes.button}>
                     Dribbble
-                  </Button>
+                  </Button> */}
+                  <IconButton
+                    variant="outlined"
+                    href="https://github.com/XXiao12"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="inherit"
+                    className={classes.button}
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </IconButton>
+                  <IconButton
+                    variant="outlined"
+                    href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="inherit"
+                    className={classes.button}
+                  >
+                    <FontAwesomeIcon icon={faLinkedin} />
+                  </IconButton>
+                  <IconButton
+                    variant="outlined"
+                    href="https://dribbble.com/shirley_x"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    color="inherit"
+                    className={classes.button}
+                  >
+                    <FontAwesomeIcon icon={faDribbble} />
+                  </IconButton>
                 </div>
               </div>
             </div>
@@ -145,7 +192,11 @@ class About extends Component {
 
           <div className="about__container">
             <h2>I am always open to feedback!</h2>
-            <p>Let me know what I am doing wrong or what I am doing right.<br />Feel free to also use this form for other inquiries as well.</p>
+            <p>
+              Let me know what I am doing wrong or what I am doing right.
+              <br />
+              Feel free to also use this form for other inquiries as well.
+            </p>
             <div>
               <form
                 id="contact-form"
@@ -191,17 +242,14 @@ class About extends Component {
                   value={this.state.message}
                   onChange={this.handleTextChange}
                 ></textarea>
-                <button
-                  id="submit"
-                  type="submit"
-                >
+                <button id="submit" type="submit">
                   Submit
                 </button>
               </form>
             </div>
           </div>
         </div>
-      </WrapperComponent >
+      </WrapperComponent>
     );
   }
 }

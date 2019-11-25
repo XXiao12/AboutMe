@@ -1,41 +1,45 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 // import Typed from 'typed.js';
-import generateuuid from 'uuid';
-import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import { Link } from 'react-router-dom'
-import logo from '../../img/React/logo.svg';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faDribbble, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import generateuuid from "uuid";
+import { withStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import IconButton from "@material-ui/core/IconButton";
+import { Link } from "react-router-dom";
+import logo from "../../img/React/logo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faDribbble,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 
-import './splash.css';
+import "./splash.css";
 
 const styles = theme => ({
   enterButton: {
-    backgroundColor: '#0080ff',
-    color: 'white',
-    border: 'none',
+    backgroundColor: "#0080ff",
+    color: "white",
+    border: "none",
     margin: theme.spacing.unit,
-    '&:hover': {
-      backgroundColor: '#0159b1',
-      border: 'none',
-      color: 'white'
-    },
+    "&:hover": {
+      backgroundColor: "#0159b1",
+      border: "none",
+      color: "white"
+    }
   },
   button: {
-    margin: theme.spacing.unit,
+    margin: theme.spacing.unit
   },
   input: {
-    display: 'none',
-  },
+    display: "none"
+  }
 });
 
 class Splash extends Component {
   render() {
     const { classes } = this.props;
-    const homeLink = props => <Link to="/portfolio" {...props} />
+    const homeLink = props => <Link to="/portfolio" {...props} />;
 
     return (
       <div key={generateuuid()} className="Splash">
@@ -51,7 +55,8 @@ class Splash extends Component {
               variant="outlined"
               component={homeLink}
               color="primary"
-              className={classes.enterButton}>
+              className={classes.enterButton}
+            >
               Enter Site
             </Button>
           </div>
@@ -64,7 +69,8 @@ class Splash extends Component {
               target="_blank"
               rel="noopener noreferrer"
               color="inherit"
-              className={classes.button}>
+              className={classes.button}
+            >
               <FontAwesomeIcon icon={faGithub} />
             </IconButton>
             <IconButton
@@ -72,7 +78,9 @@ class Splash extends Component {
               href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
               target="_blank"
               rel="noopener noreferrer"
-              color="inherit" className={classes.button}>
+              color="inherit"
+              className={classes.button}
+            >
               <FontAwesomeIcon icon={faLinkedin} />
             </IconButton>
             <IconButton
@@ -81,7 +89,8 @@ class Splash extends Component {
               target="_blank"
               rel="noopener noreferrer"
               color="inherit"
-              className={classes.button}>
+              className={classes.button}
+            >
               <FontAwesomeIcon icon={faDribbble} />
             </IconButton>
           </div>
@@ -92,7 +101,10 @@ class Splash extends Component {
               href="https://reactjs.org"
               target="_blank"
               rel="noopener noreferrer"
-            > React </a>
+            >
+              {" "}
+              React{" "}
+            </a>
             <img src={logo} className="Splash-logo" alt="logo" />
           </p>
         </div>
@@ -102,7 +114,7 @@ class Splash extends Component {
 }
 
 Splash.propTypes = {
-  classes: PropTypes.object.isRequired,
+  classes: PropTypes.object.isRequired
 };
 
 export default withStyles(styles)(Splash);
