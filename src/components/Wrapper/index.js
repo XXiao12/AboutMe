@@ -108,7 +108,7 @@ class WrapperComponent extends Component {
             hideModal,
             modalMessage
         } = this.state;
-        const { children } = this.props;
+        const { children, classname } = this.props;
 
         return (
             <div>
@@ -121,7 +121,7 @@ class WrapperComponent extends Component {
                     hidden={hideNav}
                     onClick={this.onCloseNav}
                 />
-                <div className="wrapper">
+                <div className={`wrapper ${classname}`}>
                     <NavBar onClick={this.onCloseNav} />
                     {children}
                 </div >
@@ -136,7 +136,12 @@ WrapperComponent.propTypes = {
     onClick: PropTypes.func,
     mailSent: PropTypes.bool,
     mailSentError: PropTypes.string,
-    notification: PropTypes.string
+    notification: PropTypes.string,
+    classname: PropTypes.string
+};
+
+WrapperComponent.defaultProps = {
+    classname: ''
 };
 
 export default withRouter(WrapperComponent);

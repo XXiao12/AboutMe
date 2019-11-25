@@ -27,9 +27,10 @@ const projects = {
         btntextL: "ENIN 140"
     },
     CST: {
-        title: "Colliding Scopes Theatre - Graphic Designer",
+        title: "The King in Yellow",
         location: "Queen's University",
-        timerange: "October 2015 to April 2016",
+        timerange: "October 2015 - April 2016",
+        backgroundSrc: "../../img/CST/bannerN.png",
         linkR: "",
         linkL: "",
         btntextR: "",

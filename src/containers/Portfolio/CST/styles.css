@@ -1,8 +1,68 @@
 .CST__images {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .CST__images img {
-    margin-right: 32px;
+  margin-right: 32px;
+}
+
+.CST__summary {
+  display: flex;
+  flex-direction: row;
+  margin: 32px;
+}
+
+.CST__summary div {
+  padding: 32px;
+}
+
+.CST .projectwrapper__header,
+.projectwrapper__header--white {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32px;
+  justify-content: center;
+  text-shadow: 1px 1px 2px black;
+}
+
+.CST .projectwrapper__header,
+.projectwrapper__header--white p {
+  margin: 5px;
+}
+
+.CST h3 {
+  font-weight: bold;
+}
+
+.CST__achievements,
+.CST__contents {
+  margin-left: 64px;
+  margin-right: 64px;
+}
+.CST__achievements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CST__achievements svg {
+  color: #ffa909;
+  margin-right: 16px;
+  font-size: 25px;
+}
+
+.CST__achievements div {
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #faca72;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .CST__summary {
+    display: flex;
+    flex-direction: column;
+  }
 }
