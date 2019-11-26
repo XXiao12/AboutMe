@@ -1,6 +1,10 @@
 .CST__images {
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .CST__images img {
@@ -35,6 +39,10 @@
   font-weight: bold;
 }
 
+.CST__contents--section {
+  margin-top: 64px;
+}
+
 .CST__achievements,
 .CST__contents {
   margin-left: 64px;
@@ -58,6 +66,12 @@
   align-items: center;
   border: 2px solid #faca72;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .CST__images {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {

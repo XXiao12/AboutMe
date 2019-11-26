@@ -97,7 +97,7 @@ class WrapperComponent extends Component {
             pathname
         } = this.props.location
 
-        if (pathname === '/about' && (prevProps != this.props)) {
+        if (pathname === '/about' && (prevProps !== this.props)) {
             this.updateAndNotify()
         }
     }

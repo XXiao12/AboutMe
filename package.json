@@ -19,8 +19,10 @@
     "mdbreact": "^4.17.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-images": "^0.5.19",
+    "react-image-gallery": "^0.9.1",
+    "react-images": "^1.0.0",
     "react-loader-spinner": "^2.3.0",
+    "react-photo-gallery": "^8.0.0",
     "react-redux": "^7.0.3",
     "react-responsive-image": "^5.0.0",
     "react-router-dom": "^4.3.1",
@@ -35,7 +37,7 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
-    "start": "node .",
+    "start": "react-scripts start",
     "start:dev": "webpack-dev-server --config ./webpack.config.js --mode development",
     "dev": "webpack --mode development --module-bind js=babel-loader",
     "build": "webpack --mode production --module-bind js=babel-loader",
@@ -62,10 +64,8 @@
     "fslightbox-react": "^1.4.5",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.6.0",
-    "webpack": "^4.31.0",
     "webpack-bundle-analyzer": "^3.3.2",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1",
     "webpack-manifest-plugin": "^2.0.4"
   }
 }
