@@ -2,27 +2,19 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import ProjectWrapper from "../../../components/ProjectWrapper";
+import preloadImg from "../../../utils/preload";
+import CSTImages from "../../../img/CST/index";
 import Gallery from "../../../components/Gallery";
-import plan1 from "../../../img/CST/IMG_2549.jpg";
-import plan2 from "../../../img/CST/IMG_2550.jpg";
-import plan3 from "../../../img/CST/IMG_2551.jpg";
-import plan4 from "../../../img/CST/IMG_2552.jpg";
-import plan5 from "../../../img/CST/IMG_2553.jpg";
-import logo from "../../../img/CST/logo.jpg";
-import logo2 from "../../../img/CST/cstDisplay.jpg";
-import posterO from "../../../img/CST/posterO.jpg";
-import posterN from "../../../img/CST/posterN.png";
-import bannerO from "../../../img/CST/bannerO.jpg";
-import bannerN from "../../../img/CST/bannerN.png";
-import banner from "../../../img/CST/bannerBlank.png";
 
 import "./styles.css";
 
-const CST = (props = {}) => {
+const CST = () => {
+  preloadImg(CSTImages);
+
   return (
     <ProjectWrapper
       projectkey="CST"
-      backgroundSrc={banner}
+      backgroundSrc={CSTImages.banner}
       bannerFontColor="--white"
     >
       <div className="CST__summary">
@@ -75,27 +67,27 @@ const CST = (props = {}) => {
             <Gallery
               images={[
                 {
-                  src: plan1,
+                  src: CSTImages.plan1,
                   width: 3,
                   height: 4
                 },
                 {
-                  src: plan2,
+                  src: CSTImages.plan2,
                   width: 3,
                   height: 4
                 },
                 {
-                  src: plan3,
+                  src: CSTImages.plan3,
                   width: 3,
                   height: 4
                 },
                 {
-                  src: plan4,
+                  src: CSTImages.plan4,
                   width: 3,
                   height: 4
                 },
                 {
-                  src: plan5,
+                  src: CSTImages.plan5,
                   width: 3,
                   height: 4
                 }
@@ -114,17 +106,17 @@ const CST = (props = {}) => {
             <Gallery
               images={[
                 {
-                  src: logo,
+                  src: CSTImages.logo,
                   width: 4,
                   height: 3
                 },
                 {
-                  src: posterO,
+                  src: CSTImages.posterO,
                   width: 4,
                   height: 6
                 },
                 {
-                  src: bannerO,
+                  src: CSTImages.bannerO,
                   width: 3,
                   height: 1
                 }
@@ -142,17 +134,17 @@ const CST = (props = {}) => {
             <Gallery
               images={[
                 {
-                  src: posterN,
+                  src: CSTImages.posterN,
                   width: 4,
                   height: 6
                 },
                 {
-                  src: bannerN,
+                  src: CSTImages.bannerN,
                   width: 3,
                   height: 1
                 },
                 {
-                  src: logo2,
+                  src: CSTImages.logo2,
                   width: 4,
                   height: 3
                 }

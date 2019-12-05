@@ -2,7 +2,9 @@ import React, { useCallback, useState } from "react";
 import DisplayGallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-function Gallery(props = {}) {
+import './styles.css';
+
+const Gallery = (props = {}) => {
   const { images } = props;
   const [currentImage, setCurrentImage] = useState(0);
   const [modalIsOpen, setModalIsOpen] = useState(false);
