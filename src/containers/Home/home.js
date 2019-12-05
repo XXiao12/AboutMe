@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import { withStyles } from "@material-ui/core/styles";
@@ -8,6 +8,7 @@ import WrapperComponent from "../../components/Wrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faUserShield } from "@fortawesome/free-solid-svg-icons";
 import { faDribbble } from "@fortawesome/free-brands-svg-icons";
+import preloadImg from "../../utils/preload";
 
 import cstDisplayPic from "../../img/CST/cstDisplay.jpg";
 
@@ -66,12 +67,10 @@ const styles = theme => ({
   }
 });
 
-function Home(props = {}) {
-  useEffect(() => {
-    new Image().src = cstDisplayPic;
-  }, []);
+const Home = (props = {}) => {
   const { classes } = props;
   const Process = props => <Link to="/process" {...props} />;
+  preloadImg([cstDisplayPic]);
 
   return (
     <WrapperComponent>
@@ -85,6 +84,12 @@ function Home(props = {}) {
               imgSrc={cstDisplayPic}
               company="Colliding Scope Theatre"
               link="/colliding_scopes_theatre"
+            />
+            <ProjectButton
+              name="myPlants"
+              descriptionTag="myPlants"
+              company="myPlants"
+              link="/my_plants"
             />
           </div>
           <div className="home__container--content">
@@ -149,7 +154,7 @@ function Home(props = {}) {
       </div>
     </WrapperComponent>
   );
-}
+};
 
 Home.propTypes = {
   classes: PropTypes.object.isRequired

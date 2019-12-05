@@ -31,11 +31,6 @@
     flex-direction: column;
 }
 
-.project__button div {
-    flex: 1 2 0;
-    text-align: center;
-}
-
 .project__button p, h2, h3 {
     font-family: Helvetica;
     color: black;
@@ -45,10 +40,19 @@
     flex: 2 1 100%;
 }
 
-#project__img {
+.project__img {
     background-color: grey;
     width: 250px;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project__img p {
+    text-align: center;
+    color: white;
+    font-weight: bold;
 }
 
 .project__buttonlocation {

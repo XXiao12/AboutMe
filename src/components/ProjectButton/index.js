@@ -17,9 +17,19 @@ const ProjectButton = (props = {}) => {
     <div className="project">
       <Link className="links--themeblack" to={link}>
         <div className="project__button">
-          <img id="project__img" src={imgSrc} alt="project_displayPic" width="250px" />
+          {imgSrc === "" ? (
+            <div className="project__img">
+              <p>In Progress</p>
+            </div>
+          ) : (
+            <img
+              className="project__img"
+              src={imgSrc}
+              alt="project_displayPic"
+              width="250px"
+            />
+          )}
           <div>
-            {/* <h3 className="project__buttontitle">{name}</h3> */}
             <p className="project__buttonlocation">{company}</p>
           </div>
         </div>
@@ -30,14 +40,14 @@ const ProjectButton = (props = {}) => {
 
 ProjectButton.propTypes = {
   link: PropTypes.string,
-//   name: PropTypes.string,
+  //   name: PropTypes.string,
   imgSrc: PropTypes.string,
   company: PropTypes.string
 };
 
 ProjectButton.defaultProps = {
   link: "/404",
-//   name: "",
+  //   name: "",
   imgSrc: "",
   company: ""
 };

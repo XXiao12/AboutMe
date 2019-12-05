@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Loader from 'react-loader-spinner';
-// import { createBrowserHistory } from 'history'
-// import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import Splash from './containers/Splash/splash';
 import importfacts from './facts';
 import portfolio from './containers/Home/home';
@@ -10,6 +8,7 @@ import about from './containers/About';
 import error from './components/404';
 import process from './containers/Portfolio/Process';
 import cst from './containers/Portfolio/CST';
+import myPlants from './containers/Portfolio/MyPlants';
 
 
 const demoAsyncCall = () => {
@@ -78,6 +77,7 @@ class App extends Component {
             <Route path="/about" component={about} />
             <Route path="/process" component={process} />
             <Route path="/colliding_scopes_theatre" component={cst} />
+            <Route path="/my_plants" component={myPlants} />
             <Route component={error} />
           </Switch>
       </HashRouter>
