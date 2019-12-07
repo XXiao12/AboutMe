@@ -23,6 +23,8 @@ const ProjectWrapper = (props = {}) => {
   const project = _.chain(routeProjects)
     .reduce((acc, value, key) => (key === projectkey ? value : acc), {})
     .value();
+    const leftLink = project.linkL === "" ? "links--disabled" : "";
+    const rightLink = project.linkR === "" ? "links--disabled" : "";
 
   return (
     <Wrapper classname="projectwrapper">
@@ -42,7 +44,7 @@ const ProjectWrapper = (props = {}) => {
         <div className="projectwrapper__contents">{children}</div>
         <div className="projectwrapper__buttoncontainer">
           <Link
-            className="links--themeblack"
+            className={`links--themeblack ${leftLink}`}
             to={project.linkL || "/404"}
           >
             {project.btntextL}
@@ -51,7 +53,7 @@ const ProjectWrapper = (props = {}) => {
             Back to Portfolio
           </Link>
           <Link
-            className="links--themeblack"
+            className={`links--themeblack ${rightLink}`}
             to={project.linkR || "/404"}
           >
             {project.btntextR}
