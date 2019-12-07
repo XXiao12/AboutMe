@@ -111,7 +111,7 @@ class WrapperComponent extends Component {
         const { children, classname } = this.props;
 
         return (
-            <div style={{height: '100%'}}>
+            <div>
                 <Modal
                     message={modalMessage}
                     onClose={this.onCloseModal}
@@ -132,7 +132,10 @@ class WrapperComponent extends Component {
 
 WrapperComponent.propTypes = {
     hidden: PropTypes.bool,
-    children: PropTypes.element,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.element),
+        PropTypes.element
+    ]),
     onClick: PropTypes.func,
     mailSent: PropTypes.bool,
     mailSentError: PropTypes.string,
@@ -141,7 +144,13 @@ WrapperComponent.propTypes = {
 };
 
 WrapperComponent.defaultProps = {
-    classname: ''
+    classname: '',
+    children: null,
+    notification: '',
+    mailSentError: '',
+    mailSent: false,
+    hidden: true,
+    onClick: () => {}
 };
 
 export default withRouter(WrapperComponent);

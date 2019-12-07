@@ -209,7 +209,6 @@ class About extends Component {
                   id="fname"
                   name="fname"
                   placeholder="Your name.."
-                  defaultValue=""
                   value={this.state.fname}
                   onChange={this.handleTextChange}
                 />
