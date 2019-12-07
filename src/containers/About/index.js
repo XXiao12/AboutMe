@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 import WrapperComponent from "../../components/Wrapper";
-import profile_image from "../../img/profile_photo.png";
+import profile_image from "../../media/imgs/profile_photo.png";
 import * as emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

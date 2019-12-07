@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import close from '../../img/menu/close.svg';
+import close from '../../media/imgs/menu/close.svg';
 import { NavLink } from 'react-router-dom'
 
 import './styles.css';

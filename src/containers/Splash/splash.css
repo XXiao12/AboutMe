@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(../../img/BirdOnTree.png) fixed no-repeat #282c34;
+  background: url(../../media/imgs/BirdOnTree.png) fixed no-repeat #282c34;
   background-size: cover;
 }
 

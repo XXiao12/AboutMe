@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink, Link } from 'react-router-dom'
-import menuIcon from '../../img/menu/hamburger2x.png';
+import menuIcon from '../../media/imgs/menu/hamburger2x.png';
 
 import './styles.css';
 

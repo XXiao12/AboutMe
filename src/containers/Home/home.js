@@ -10,7 +10,7 @@ import { faClock, faUserShield } from "@fortawesome/free-solid-svg-icons";
 import { faDribbble } from "@fortawesome/free-brands-svg-icons";
 import preloadImg from "../../utils/preload";
 
-import cstDisplayPic from "../../img/CST/cstDisplay.jpg";
+import cstDisplayPic from "../../media/imgs/CST/cstDisplay.jpg";
 
 import "./styles.css";
 
