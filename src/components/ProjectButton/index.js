@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faImages } from "@fortawesome/free-solid-svg-icons";
 
 import "./styles.css";
 
@@ -19,7 +21,7 @@ const ProjectButton = (props = {}) => {
         <div className="project__button">
           {imgSrc === "" ? (
             <div className="project__img">
-              <p>In Progress</p>
+              <FontAwesomeIcon icon={faImages} />
             </div>
           ) : (
             <img

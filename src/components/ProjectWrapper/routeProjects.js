@@ -26,14 +26,24 @@ const projects = {
         btntextR: "Colliding Scopes Theatre",
         btntextL: "ENIN 140"
     },
+    myPlants: {
+        title: "MyPlants",
+        location: "Toronto, ON",
+        timerange: "December 2019 - Present",
+        backgroundSrc: "",
+        linkR: "",
+        linkL: "/colliding_scopes_theatre",
+        btntextR: "",
+        btntextL: "The King In Yellow"
+    },
     CST: {
         title: "The King in Yellow",
         location: "Queen's University",
         timerange: "October 2015 - April 2016",
         backgroundSrc: "../../img/CST/bannerN.png",
-        linkR: "",
+        linkR: "/my_plants",
         linkL: "",
-        btntextR: "",
+        btntextR: "MyPlants",
         btntextL: ""
     }
 };

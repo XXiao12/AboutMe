@@ -82,7 +82,7 @@ p {
   color: grey !important;
 }
 
- h1, h2, h3 {
+ h1, h2 {
    font-weight: 200;
  }
 
@@ -90,7 +90,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-/* body div:not(:first-child) {
-  display: none;
-} */

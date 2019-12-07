@@ -16,16 +16,9 @@
     color: white;
 }
 
-.projectwrapper__contents {
-    padding-bottom: 64px;
-}
-
 .projectwrapper__buttoncontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* position: absolute;
-    bottom: 0; */
-    width: 100%;
-    margin-bottom: 64px;
+    display: grid;
+    margin: 64px;
+    grid-template-columns: 30% auto 30%;
+    text-align: center;
 }

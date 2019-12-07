@@ -88,7 +88,7 @@ const Home = (props = {}) => {
             <ProjectButton
               name="myPlants"
               descriptionTag="myPlants"
-              company="myPlants"
+              company="MyPlants"
               link="/my_plants"
             />
           </div>

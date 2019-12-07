@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 import ProjectWrapper from "../../../components/ProjectWrapper";
 import preloadImg from "../../../utils/preload";
-import CSTImages from "../../../img/CST/index";
+import CSTImages from "../../../media/imgs/CST/index";
 import Gallery from "../../../components/Gallery";
 
 import "./styles.css";

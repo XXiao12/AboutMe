@@ -1,0 +1,10 @@
+#inProgress {
+    width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+    #inProgress {
+        width: 100%;
+    }
+
+}

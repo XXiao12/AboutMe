@@ -111,7 +111,7 @@ class WrapperComponent extends Component {
         const { children, classname } = this.props;
 
         return (
-            <div>
+            <div style={{height: '100%'}}>
                 <Modal
                     message={modalMessage}
                     onClose={this.onCloseModal}

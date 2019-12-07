@@ -27,21 +27,23 @@ const ProjectWrapper = (props = {}) => {
   return (
     <Wrapper classname="projectwrapper">
       <div className={projectkey}>
-        <div
-          className={`projectwrapper__header${bannerFontColor}`}
-          style={{
-            background: `url(${backgroundSrc}) no-repeat`
-          }}
-        >
-          <h1>{project.title}</h1>
-          <p>{project.location}</p>
-          <p>{project.timerange}</p>
-        </div>
+        {backgroundSrc === "" ? null : (
+          <div
+            className={`projectwrapper__header${bannerFontColor}`}
+            style={{
+              background: `url(${backgroundSrc}) no-repeat`
+            }}
+          >
+            <h1>{project.title}</h1>
+            <p>{project.location}</p>
+            <p>{project.timerange}</p>
+          </div>
+        )}
         <div className="projectwrapper__contents">{children}</div>
         <div className="projectwrapper__buttoncontainer">
           <Link
-            className="links--themeblack links--disabled"
-            to={project.linkL}
+            className="links--themeblack"
+            to={project.linkL || "/404"}
           >
             {project.btntextL}
           </Link>
@@ -49,8 +51,8 @@ const ProjectWrapper = (props = {}) => {
             Back to Portfolio
           </Link>
           <Link
-            className="links--themeblack links--disabled"
-            to={project.linkR}
+            className="links--themeblack"
+            to={project.linkR || "/404"}
           >
             {project.btntextR}
           </Link>
