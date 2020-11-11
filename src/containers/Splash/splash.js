@@ -49,7 +49,7 @@ class Splash extends Component {
             <h1>Shirley Xiao</h1>
           </div>
           <div className="content">
-            <p id="title">UI/UX Designer & Developer </p>
+            <p id="title">Front End Developer</p>
             <p id="blurb">Everything starts with a story.</p>
             <Button
               variant="outlined"
