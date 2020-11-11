@@ -7,14 +7,14 @@ import ProjectButton from "../../components/ProjectButton";
 import WrapperComponent from "../../components/Wrapper";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faUserShield } from "@fortawesome/free-solid-svg-icons";
-import { faDribbble } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faDribbble } from "@fortawesome/free-brands-svg-icons";
 import preloadImg from "../../utils/preload";
 
 import cstDisplayPic from "../../media/imgs/CST/cstDisplay.jpg";
 
 import "./styles.css";
 
-const styles = theme => ({
+const styles = (theme) => ({
   button: {
     margin: theme.spacing.unit,
     fontSize: "12px",
@@ -22,7 +22,7 @@ const styles = theme => ({
     textTransform: "none",
     fontWeight: 600,
     backgroundColor: "#d8d7d7",
-    color: "black"
+    color: "black",
   },
   buttond: {
     margin: theme.spacing.unit,
@@ -34,8 +34,8 @@ const styles = theme => ({
     color: "#da1460",
     "&:hover": {
       //you want this to be the same as the backgroundColor above
-      backgroundColor: "#ffe3ef"
-    }
+      backgroundColor: "#ffe3ef",
+    },
   },
   buttonp: {
     margin: theme.spacing.unit,
@@ -47,17 +47,17 @@ const styles = theme => ({
     color: "white",
     "&:hover": {
       //you want this to be the same as the backgroundColor above
-      backgroundColor: "#82c1ff"
-    }
+      backgroundColor: "#82c1ff",
+    },
   },
   input: {
-    display: "none"
-  }
+    display: "none",
+  },
 });
 
 const Home = (props = {}) => {
   const { classes } = props;
-  const Process = props => <Link to="/process" {...props} />;
+  const Process = (props) => <Link to="/process" {...props} />;
   preloadImg([cstDisplayPic]);
 
   return (
@@ -73,30 +73,36 @@ const Home = (props = {}) => {
               link="/colliding_scopes_theatre"
             />
             <ProjectButton
+              name="unitConverter"
+              descriptionTag="unitConverter"
+              company="Unit Converter"
+              link="/unit_converter"
+            />
+            {/* <ProjectButton
               name="myPlants"
               descriptionTag="myPlants"
-              company="MyPlants"
+              company="MyPlants (archived)"
               link="/my_plants"
-            />
+            /> */}
           </div>
           <div className="home__container--content">
             <div className="home__private home--buttons">
               <span className="color">
-                <FontAwesomeIcon icon={faUserShield} /> Private Projects
+                <FontAwesomeIcon icon={faGithub} /> Github
               </span>
               <div>
                 <p>
-                  There are ongoing projects that are not allowed to be
-                  displayed on the internet. I would gladly show these projects
-                  in an in-person meeting or interview.
+                  Projects and assignments I have worked on through university,
+                  for fun, and interview tasks.
                 </p>
                 <Button
-                  component={Process}
+                  href="https://github.com/XXiao12"
+                  target="_blank"
                   rel="noopener noreferrer"
                   color="inherit"
                   className={classes.buttonp}
                 >
-                  See design process
+                  Shirley's Github
                 </Button>
               </div>
             </div>
@@ -154,7 +160,7 @@ const Home = (props = {}) => {
 };
 
 Home.propTypes = {
-  classes: PropTypes.object.isRequired
+  classes: PropTypes.object.isRequired,
 };
 
 export default withStyles(styles)(Home);

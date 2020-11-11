@@ -9,6 +9,7 @@ import error from './components/404';
 import process from './containers/Portfolio/Process';
 import cst from './containers/Portfolio/CST';
 import myPlants from './containers/Portfolio/MyPlants';
+import unitConverter from './containers/Portfolio/unitConverter';
 
 
 const demoAsyncCall = () => {
@@ -78,6 +79,7 @@ class App extends Component {
             <Route path="/process" component={process} />
             <Route path="/colliding_scopes_theatre" component={cst} />
             <Route path="/my_plants" component={myPlants} />
+            <Route path="/unit_converter" component={unitConverter} />
             <Route component={error} />
           </Switch>
       </HashRouter>

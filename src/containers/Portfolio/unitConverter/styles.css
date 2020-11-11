@@ -1,0 +1,11 @@
+#tempIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.unitConverter__contents {
+    margin-right: 64px;
+    margin-left: 64px;
+}

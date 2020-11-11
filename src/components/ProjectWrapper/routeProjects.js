@@ -32,8 +32,18 @@ const projects = {
         timerange: "December 2019 - Present",
         backgroundSrc: "",
         linkR: "",
-        linkL: "/colliding_scopes_theatre",
+        linkL: "/unit_converter",
         btntextR: "",
+        btntextL: "Unit Converter"
+    },
+    unitConverter: {
+        title: "Unit Converter",
+        location: "Toronto, ON",
+        timerange: "December 2019 - Present",
+        backgroundSrc: "",
+        linkR: "/my_plants",
+        linkL: "/colliding_scopes_theatre",
+        btntextR: "MyPlants",
         btntextL: "The King In Yellow"
     },
     CST: {
@@ -41,9 +51,9 @@ const projects = {
         location: "Queen's University",
         timerange: "October 2015 - April 2016",
         backgroundSrc: "../../img/CST/bannerN.png",
-        linkR: "/my_plants",
+        linkR: "/unit_converter",
         linkL: "",
-        btntextR: "MyPlants",
+        btntextR: "Unit Converter",
         btntextL: ""
     }
 };
