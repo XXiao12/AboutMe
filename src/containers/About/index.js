@@ -79,10 +79,14 @@ class About extends Component {
   }
 
   handleTextChange(event) {
-    this.setState({
-      [event.target.name]: event.target.value,
-      notification: ""
-    });
+    // temp solution for uglifyjs error with es6 version
+    const eventObject = {notification: ""};
+    eventObject[event.target.name] = event.target.value;
+    this.setState(eventObject);
+    // this.setState({
+    //   [event.target.name]: event.target.value,
+    //   notification: ""
+    // });
   }
 
   resetForm() {
