@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-// import Typed from 'typed.js';
 import generateuuid from "uuid";
 import { withStyles } from "@material-ui/core/styles";
 import Button from "@material-ui/core/Button";

@@ -51,7 +51,6 @@ class About extends Component {
     } else if (message.length < 20) {
       this.setState({ notification: "Please provide more information :)" });
     } else {
-      // this.resetForm();
       const params = {
         from_name: `${fname} (${email})`,
         to_name: "shirley.xiao1996@gmail.com",
@@ -133,32 +132,6 @@ class About extends Component {
               </div>
               <div className="about__links">
                 <div className="about__buttons">
-                  {/* <Button
-                    variant="outlined"
-                    href="https://github.com/XXiao12"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    color="inherit"
-                    className={classes.button}>
-                    Github
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    href="https://www.linkedin.com/in/shirley-xiao-b72335a7/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    color="inherit" className={classes.button}>
-                    LinkedIn
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    href="https://dribbble.com/shirley_x"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    color="inherit"
-                    className={classes.button}>
-                    Dribbble
-                  </Button> */}
                   <IconButton
                     variant="outlined"
                     href="https://github.com/XXiao12"
